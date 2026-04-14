@@ -1,0 +1,625 @@
+:: StoryTitle
+ENGL2097_GroupD_FP
+
+
+:: StoryData
+{
+  "ifid": "FF205ABC-F3E7-4B22-86E3-54FB49E04A8F",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "tag-colors": {
+    "footer": "purple",
+    "starter": "yellow",
+    "startup": "red",
+    "zh-hk": "yellow",
+    "en": "blue",
+    "sidebar": "purple"
+  },
+  "zoom": 1
+}
+
+
+:: Chase away [en] {"position":"475,375","size":"100,100"}
+"What the hell was that? Get out of my way and stop pissing me off!" I grumbled as he stumbled away.
+
+[[Next->page 4]]
+(display:"Styles")
+
+
+:: Footer [footer] {"position":"75,150","size":"100,100"}
+{(display:"Sidebar")}
+
+
+:: Pretend everything is fine [en] {"position":"975,350","size":"100,100"}
+“I don’t know… don’t you feel something’s off here?” I whispered.
+
+Samuel raised an eyebrow. “Where exactly?”
+
+“The whole atmosphere,” I said. “Did you notice the staff at the park gates?”
+
+He chuckled. “Them? What’s wrong with them? Aside from looking like they’re full of resentment while saying the most dreamy lines. Honestly, they remind me of myself at work—smiling through the grind. Ha!”
+
+His laugh rang out, casual and dismissive, cutting through my unease.
+
+Murder False / Ending +0 
+I let the thought slip away, deciding not to dwell on it any further. The music and chatter swallowed my doubts, and for the moment, I convinced myself everything was fine.
+[[Next->page 8]]
+(display:"Styles")
+
+
+:: Response [en] {"position":"475,250","size":"100,100"}
+"Hey are u fine? Get up first,” I said, his voice edged with unease. I was confused and ask him more “What did you mean by those words just now?”
+
+The vagrant’s eyes flickered with something between fear and warning. “The rules… they’re real. Don’t break them.”
+
+With that, he spun on his heel and bolted into the shadows, leaving only the echo of his words hanging in the air.
+
+(set: $sanity to it - 70)
+[[Next->page 4]]
+(display:"Styles")
+
+
+:: SCP前工作人員 {"position":"700,100","size":"100,100"}
+留下的一篇不知名的報章
+他們討厭規矩，所以設立規矩
+前SCP
+
+
+:: Sidebar [sidebar] {"position":"200,150","size":"100,100"}
+{(append: ?Sidebar)[
+$statusText[STATUS]
+<br>
+$sanityText[SANITY]
+(if: $sanity <= 30)[<script>$('span').addClass('danger');</script>]\
+(else:)[<script>$('span').addClass('healthy');</script>]
+<span id="sanity-val">$sanityNumText[$sanity%]</span>
+
+<div class="sanity-bar-bg">
+  <div class="sanity-bar-fill" id="sanity-fill"></div>
+</div>
+<script>
+  setTimeout(function() {
+    var textEl = document.getElementById('sanity-val');
+    if (textEl) {
+      var val = parseInt(textEl.innerText);
+      window.updateSanityBar(val);
+    }
+  }, 100);
+</script>
+
+<hr>
+$invText[INVENTORY]
+$itemText[Empty]
+<br>
+$footerText[You maintain your composure.]
+]}
+
+
+:: Start {"position":"100,300","size":"100,100"}
+Recently, a newly opened theme park has seen an astonishing influx of visitors, as if everyone were irresistibly drawn to it.
+
+Particularly captivating is the circus performance at the "Dreamland Circus," which has just recently opened.
+
+Word has it that some guests are so enamored with this circus that they visit three to four times a week, which seems quite exaggerated.
+
+As a content creator, I couldn't resist riding the wave of this popularity to attract viewers, so I booked tickets to the circus. Due to the overwhelming number of attendees, the only remaining options for entry were at night; all other times had already sold out. I had hoped to spend a leisurely day there, but I felt rather helpless. 
+
+[[Next->page 1]]
+(display:"Styles")
+
+
+:: Startup [startup] {"position":"75,25","size":"100,100"}
+{(set: $sanity to 100)
+(set: $inventory to (a:))
+<!--Style-->
+(set: $statusText to (text-color:#909090)+(font:"Bebas Neue"))
+(set: $sanityText to (text-style:"expand")+(text-style:"subscript"))
+(set: $sanityNumText to (text-size:2))
+(set: $invText to (text-style:"expand")+(text-style:"subscript"))
+(set: $itemText to (text-color:#666))
+(set: $footerText to (text-color:#444)+(text-size:0.5))}
+
+
+
+
+:: Styles {"position":"325,150","size":"100,100"}
+{
+(enchant: ?link, (text-color:#d4183d)+(hover-style:(text-style:"tall","condense","shudder")))
+}
+
+
+:: Tell him about the strange atmosphere [en] {"position":"975,225","size":"100,100"}
+I forced a smile. 
+
+“I’m fine,” 
+
+Samuel tilted his head, studying me. 
+
+“You’re sure? Don’t tell me that homeless guy spooked you.”
+
+“Maybe I’m just not feeling well today,” I muttered
+
+He gave a small shrug, apparently satisfied, and turned his attention back to the crowd. The music swelled, the crimson tent loomed larger, and the line pressed forward.
+
+But inside, my pulse wouldn’t settle. His casual dismissal only deepened the chill in my chest. The word from the brochure echoed again in my mind—dealt with.
+
+Samuel didn’t notice. He was already caught up in the excitement, while I was left alone with the gnawing suspicion that I had just stepped into the wrong story, one that might not let me walk back out.
+
+Ending‑1: Murder True 
+The choice to stay silent sealed my fate.
+[[Next->page 8]]
+(display:"Styles")
+
+
+:: page 1 [en] {"position":"225,300","size":"100,100"}
+As dusk approached and the "Monster Project" began, I entered the park and walked through a long corridor adorned with flags.
+
+Beside the corridor was a vast parking lot, darkened for some reason, adding an eerie ambiance to the bustling park.
+ 
+[[Next->page 2]]
+(display:"Styles")
+
+
+:: page 10 [en] {"position":"1350,300","size":"100,100"}
+BOOM!
+
+All in a sudden, the lights snapped off.
+
+No warning, no flicker, just sudden, absolute darkness, as though someone had yanked the power cord from the entire tent.
+
+Four or five hundred people froze, their voices rising in confusion. Children began to cry, their wails piercing the black. Adults cursed, muttered, some tried to stand, others pushed toward the exits. The air was thick with panic, the kind that spreads fast when no one knows what’s happening.
+
+It was pure chaos. The darkness felt endless, pressing in from every side. Just when the crowd’s unease was about to boil over, a voice cut through the chaos—calm, theatrical, chilling.
+
+
+A spotlight shone towards the middle of the stage, the host stood there and picked up his mic, “Let the show… begin!”
+
+[[Next->page 11]]
+(display:"Styles")
+
+
+:: page 11 [en] {"position":"1475,300","size":"100,100"}
+
+
+
+:: page 2 [en] {"position":"350,300","size":"100,100"}
+Suddenly, a homeless man grabbed my hand with huge strength, staring at me with hopelessness. He whispered, "They’re coming…"
+    
+[[Talk to him->Response]]
+[[Push him out of my way->Chase away]]
+(display:"Styles")
+
+
+:: page 4 [en] {"position":"600,300","size":"100,100"}
+Samuel patted me on the shoulder. 
+(if: $hasHint is true)[
+Me: "Idk man, he just told me a bunch of weird stuff." 
+]
+(else:)[
+Me: "I think he's just a psychopath. Let's not worry about it."
+]
+[[Next->page 5]]
+(display:"Styles")
+
+
+:: page 5 [en] {"position":"725,300","size":"100,100"}
+The crowd was thick, and we shuffled forward in the endless line until it was finally our turn to enter.
+
+At the gates, every staff member wore the same perfectly curved smile—polished, professional, and yet disturbingly identical, as if carved onto their faces. It was admirable in its precision, but the longer I stared, the more unnatural it felt, like mannequins programmed to mimic joy.
+
+The attendant before us spoke in a flat, mechanical tone, each syllable rehearsed to perfection:
+“Welcome to the park. We wish you a pleasant day.”
+
+Without breaking that eerie smile, they handed us a glossy brochure. The pages were filled with cheerful colors and neatly printed rules—safety reminders, ride instructions, the usual. But as I flipped through, I couldn’t shake the feeling that something was missing, something hidden between the lines.
+
+The words seemed ordinary, yet the atmosphere pressed down on me, whispering how the consequences of the rules were far more serious than I thought.
+
+[[Next->page 6]]
+(display:"Styles")
+
+
+:: page 5.5 (optional) 可刪減 {"position":"725,425","size":"100,100"}
+我拿著手冊看著地圖，遊樂設施種類除了最多人去的馬戲團，其他設施也就跟其他樂園沒有什麼差別。
+
+我瞄了一眼右下角的沈悶的樂園守則，
+
+守則的部分突然變成腥紅色的樣子，我揉了揉眼睛，心想著難道看錯了？
+
+守則那部份有回復正常。
+
+你沒事吧？
+
+帶著疑慮前往馬戲團的場地
+
+visual 閃爍+突然出現？
+
+
+:: page 6 [en] {"position":"850,300","size":"100,100"}
+We arrived at the grand entrance of the circus, waiting in line with the others. The tent loomed above us, its fabric a deep crimson that seemed almost alive under the glow of the lights. Cheerful music spilled out from within, mingling with the chatter of excited visitors, creating a lively facade that only made the unease in my chest grow stronger.
+
+“Welcome,” a voice intoned.
+
+Another set of rules. The brochure read:
+
+No filming or phone calls inside the venue.
+
+During the wait for performances, refrain from loud talking or chatter that might disturb the performers preparing backstage.
+
+When the host requests audience reaction, spectators must respond with enthusiastic applause.
+
+In the event of an accident, remain calm, follow our instructions, and do not attempt to leave on your own.
+
+Violators will be dealt with by staff.
+
+My eyes froze on that final line. Dealt with. A shiver ran down my spine before I could stop it.
+
+Something about this place was wrong. First the terrified vagrant’s warning, now this strange atmosphere—too polished, too controlled. My suspicious nature couldn’t help but spin darker possibilities. Was I stepping into the pages of a horror novel?
+
+Samuel noticed my unease and placed a hand on my shoulder.
+“You alright? You look pale ever since we got here.”
+
+And now the choice pressed against me like a weight:
+[[Pretend everything is fine]]
+[[Tell him about the strange atmosphere]]
+(display:"Styles")
+
+
+:: page 8 [en] {"position":"1100,300","size":"100,100"}
+We slipped into our seats, the tent buzzing with anticipation.
+
+Though the rules clearly forbade filming, I couldn’t resist. I slid my camera into a barely noticeable spot, its lens peeking out just enough. Truth be told, no one seemed to care—plenty of visitors were snapping photos, chatting loudly, breaking every rule printed in that brochure.
+
+The lights dimmed. A sudden burst of music filled the air, and the host’s voice thundered across the stage, pulling the atmosphere taut like a drumskin.
+
+“Ladies and gentlemen, welcome to the most spectacular show in the land…”
+
+His words rolled with theatrical grandeur, each syllable designed to electrify the crowd.
+
+“And now, let’s give a big round of applause to our performers today!”
+
+The audience erupted, clapping and cheering with a feverish energy. The performers stepped forward, their smiles wide, their movements sharp, as if choreographed down to the smallest gesture.
+
+I felt the weight of the rules again—applause when asked, silence when told. And though everyone around me seemed swept up in the excitement, a chill lingered at the back of my mind.
+
+[[Next->page 9]]
+(display:"Styles")
+
+
+:: page 9 [en] {"position":"1225,300","size":"100,100"}
+The show unfolded. First came the clown, dressed in vibrant colors, juggling bright balls with practiced ease. Every so often he fumbled deliberately, drawing laughter from the children whose giggles rippled through the tent.
+
+Then the beast‑master strode in, commanding a pride of golden lions. Their coats gleamed under the spotlights, their bodies powerful and tense. At his signal they leapt through iron hoops, bounded through rings of fire, and rose on hind legs in perfect balance. The audience roared with applause, swept up in the spectacle.
+
+For two hours the performances surged one after another, each act more extravagant than the last. The atmosphere climbed to a fever pitch, the crowd clapping and cheering until the tent itself seemed to tremble with sound.
+
+And yet, beneath the thunderous ovation, I felt the faint echo of the rules—those strange, rigid commands—and the memory of the vagrant’s warning. As the finale approached, I couldn’t shake the thought: perhaps the true show was only just beginning.
+(8 &9 match)
+
+[[Next->page 10]]
+(display:"Styles")
+
+
+:: 一 [zh-hk] {"position":"225,600","size":"100,100"}
+天色漸暗（怪物計畫開始），到達樂園範圍後，我走過一條佈滿樂園角色旗幟的長廊。
+長廊旁邊有一個偌大的停車場，燈光不知為何全熄滅，為熱鬧的樂園添上了幾分怪異。
+
+[[下一步->二]]
+
+
+:: 不耐煩地趕走他 [zh-hk] {"position":"475,675","size":"100,100"}
+「什麼鬼東西，大叔別擋路」
+踉蹌地爬走
+流浪漢hint false
+朋友murder true 
+    
+[[下一步->四]]
+
+
+:: 九 [zh-hk] {"position":"1225,600","size":"100,100"}
+一開場穿著鮮豔服裝的小丑走上台，手裡拿著彩球，開始拋接。動作熟練而流暢，不時穿插一些滑稽的失誤來逗樂觀眾。小孩們笑得特別開心。接著馴獸師帶著幾隻大型貓科動物上台——看起來是獅子，毛色金黃，體格雄壯。牠們在馴獸師的指令下做出各種動作：跳過鐵環、鑽過火圈、後腿站立...
+
+大家都熱烈地拍手歡呼，場內氣氛升至最高點。就這樣兩個小時的表演將近尾聲
+
+[[下一步->十]]
+
+
+:: 二 [zh-hk] {"position":"350,600","size":"100,100"}
+突然一個流浪漢猛然抓住了我的手，臉上充斥著恐慌的表情，顫抖地說：「牠們來了...」 
+    
+[[回應他]]
+[[不耐煩地趕走他]]
+
+
+:: 五 [zh-hk] {"position":"725,600","size":"100,100"}
+排隊的人很多，我們排隊進場
+門口的每位工作人員掛著一樣弧度機械般的笑容，專業得讓人敬佩又話講不出哪裡奇怪
+
+面前的人機械般地說著
+
+「歡迎光臨樂園，祝你有愉快的一天」
+遞了一份樂園手冊給我們，守則都是說注意安全什麼的。
+
+[[下一步->六]]
+
+
+:: 假裝自己沒事 [zh-hk] {"position":"975,550","size":"100,100"}
+我沒事
+朋友murder true/ending-1
+不會是被剛才的流浪漢嚇的吧
+可能今天有點不舒服吧
+嗯對方沒再理
+
+[[下一步->八]]
+
+
+:: 八 [zh-hk] {"position":"1100,600","size":"100,100"}
+進場安坐後
+
+雖然規矩說不能拍攝，但我依舊偷偷地拿出我的相機放在一個極起不起眼的位置。
+
+其實這些規矩都沒人理會，很多人都照樣拍照和大聲喧嘩。
+
+表演很快便开始了，主持人大聲的介紹將全程氣氛拉滿
+
+Ladies and gentle man welcome to the most精彩的show in land...
+
+and now lets give a big around of apluse to our performers today. 
+
+表演者所有人都熱烈地拍手歡呼。
+
+[[下一步->九]]
+
+
+:: 六 [zh-hk] {"position":"850,600","size":"100,100"}
+我們來到馬戲團的大門，排隊等候入場。馬戲團的帳幕接近鮮紅色，配上一陣陣歡快的音樂及遊客的暢談聲頗爲熱鬧。
+
+歡迎光臨
+
+又是守則，
+請遵守以下的守則，確保
+1.場內嚴禁拍攝及進行通話。
+2.表演等侯期間，請勿大聲喧嘩及聊天，影響表演者準備舞台。
+3.當主持人要求觀眾給予反應時，觀眾必須給予熱烈的掌聲。
+4.發生意外時，請保持冷靜,聽從我們的指示,不要自行離開。
+
+違規者將被工作人員處理。
+我看著最後一行字，身體不由自主地打了個顫抖。
+
+處理。
+
+這太奇怪了。先是一開始突然出現驚恐的流浪漢，還有這裡的氛圍似乎有很奇怪的地方,向來多疑的我忍不住作出更多猜想。我不會進入了什麼恐怖小說裡面吧？
+
+Samuel這時候安慰我道：
+你沒事吧，怎麼由剛才開始就那麼不對勁？
+你這時會選擇？
+[[假裝自己沒事]]
+[[告訴他這裡異樣的氛圍]]
+
+
+:: 十 [zh-hk] {"position":"1350,600","size":"100,100"}
+然後——
+
+燈光驟然熄滅。
+
+毫無預兆。
+
+像有人拔掉了表演場地的電源。
+
+四五百個人被突然的狀況而不知所措。有小孩的哭聲，亦有大人的謾罵聲，亦有人想離開。10分鐘過後，突然傳來主持人的聲音。
+
+主持人： Let the show ---begin
+
+[[下一步->十一]]
+
+
+:: 十一 [zh-hk] {"position":"1475,600","size":"100,100"}
+一把刺耳的慘叫聲划破了全場的黑暗。只見一個穿著紅色制服的工作人員，尖手刺破那個拿著專業拍攝器材的男人的肚皮，血液慢慢從傷口處流淌出來。那工作人員的臉分明不是正常的人臉，臉容歪曲。人們開始大叫，有些人開始報警求助，接通後對面根本無人回答。
+甚至有些人驚訝得拿著電話紀錄這一切。隨著越來約多人違反場內規則，那些穿著紅色制服的偽人不斷出現，違規者一律被殘忍殺害。
+
+救命啊！-- 
+還未說完的那年輕人違反表演期間大喊的規則，被怪物砍掉的上半身倒在我的面前。血全噴到我的衣服上
+
+一陣血液濃郁的充斥著我的周圍，我大腦頓時發愣。
+
+這時，面前的怪物突然轉身向我走來：場內不得進行攝影，看見面前的假人步步逼近，
+這時你會選擇：
+
+[[站在原地，不敢擅自離開]]
+[[立刻退後幾步]]
+
+
+:: 告訴他這裡異樣的氛圍 [zh-hk] {"position":"975,675","size":"100,100"}
+你不覺得這裡有點奇怪嗎？
+
+哪裏？
+
+就整體的氛圍很怪，你有看到剛才樂園大門那些工作人員嗎？
+
+他們？有什麼問題？除了一個個充滿怨恨的樣子在說著最夢幻的模樣，簡直像極了我上班的模樣 哈哈
+朋友murder false/ending +0
+我沒再多想
+
+[[下一步->八]]
+
+
+:: 四 [zh-hk] {"position":"600,600","size":"100,100"}
+朋友 Samuel 拍了拍我的肩膀。
+ (if: $hasHint is true)[
+ 我：「不知道剛才那個人是誰。他一直叨叨唸唸的很奇怪。」
+ ]
+ (else:)[
+ 我：「神經病一個，不用管。」
+ ]
+ [[下一步->五]]
+
+
+:: 回應他 [zh-hk] {"position":"475,550","size":"100,100"}
+你先起來吧 剛才你這些話是什么意思？
+流浪漢說：「那些規則...是真的... 不要違反他們... don’t…」
+說罷便轉身跑走
+流浪漢hint true
+朋友murder False
+    
+[[下一步->四]]
+
+
+:: 樂園人偶的故事 {"position":"900,100","size":"100,100"}
+剛考完高考的學生為了慶祝高中埋頭苦讀生活的結束，染上了閃亮的秀發及紋身，並一家人一起旅行慶祝。放上社交媒體後卻遭到網民的人身攻擊，斥責該名女學生拋頭露臉，有違學生身上所帶有的保守，更被網民斥是吸引男人的注意。最終女學生抵受不住網絡上殘忍的暴力，最終跳河自殺。
+樂園就在這附近。
+
+所代表的主力怪物：樂園的大型人偶
+
+
+:: 立刻退後幾步 [zh-hk] {"position":"1600,675","size":"100,100"}
+你本能地害怕的立刻退後幾步，大腦卻空白一遍。
+
+Samuel 幹嘛啊，快走啊
+說罷便拉著我往出口跑走，
+背後的工作人員看追不過也沒再跟著我們
+
+跑到門口時我踉蹌地跌了下來
+Samuel：你媽的嚇死我啦 什麼情況啊？
+我整理自己的思緒，拿起跌在地上的旅遊手冊，發現上面的樂園守則，與剛進來時那沈悶的守則不一樣。上面鮮紅色的字明顯的可怕。上面寫著：
+
+歡迎各位旅客來臨樂園。為了保障各位的人身安全及有一個愉快的體驗，請各位嚴格遵守樂園以下的守則。
+1.本樂園關閉的時間為今晚上10點，除了工作人員外其他人必須離開樂園範圍。若遊客未能在樂園大門關閉前離開，請務必留在安全的地方，直至確保周圍無任何危險，才能在自由地行走。
+2.閉園後，負責巡邏的工作人員每隔三小時便會進行設備檢查，確保樂園營業一切正常。若有需要，可以尋求他的幫忙。
+3.晚上只有少量的工作人員留守。本樂園的工作人員分為兩種，穿者深藍色的制服是普通的工作人員，你可以相信他們，他們無辦法對你怎麼樣；穿著紅色制服的是負責規管樂園的資深工作人員，他們發現你閉園後仍逗留在樂園而給予你最差的待遇。
+4.背後出現怪聲的時候，不要回頭，更不要理會。（那是樂園玩偶美寶的時候，請不要注視，理會他，）
+5.看到有強光的地方，請遠離那裡，靠近他只會令你痛不欲生。
+希望你在樂園渡過愉快的一天！
+
+又是守則。
+我就知道，這樂園異常得明顯，只是意想不到的是這裏竟然發生大量血案。
+
+Samuel: 我靠這什麼奇怪的守則
+
+
+:: 站在原地，不敢擅自離開 [zh-hk] {"position":"1600,550","size":"100,100"}
+你站在原地，不敢輕舉妄動。
+因為你
+規則裡寫除非場內指示，否則觀眾不能擅自離開
+你立刻收起手機，顫抖的盯著那吓人的臉。面前的工作人員開口道
+這麽遵守規則，還是晚了
+對方利用非人形的尖手，直接刺入你的胸膛，你在驚恐下看著自己失去致死。
+
+
+:: 開始 [zh-hk] {"position":"100,600","size":"100,100"}
+最近有個新開主題樂園異常地多人拜訪，大家都像受到誘惑般紛紛到訪
+
+尤其是這個奇夢馬戲樂園的馬戲團表演，還有最近新開的
+
+聽說有遊客對這個奇夢馬戲樂園痴迷得甚至一周去三四次不等...可為誇張
+
+作為網絡創作者，我當然要蹭一波流量吸引觀眾收看，因此訂了馬戲團的入場票。
+由於入場人數眾多，馬戲團的入場票只剩下晚上的時間可供選擇，其他時間都早已滿座。本以為能夠輕鬆遊玩一整天的我感到無可奈何。
+
+[[下一步->一]]
+
+
+:: StoryScript [script]
+window.updateSanityBar = function(value) {
+  var numericValue = parseInt(String(value).replace(/[^0-9]/g, '')) || 0;
+  var bar = document.getElementById('sanity-fill');
+  var container = document.getElementById('sanity-container'); // 取得容器
+  
+  if (bar) {
+    bar.style.width = numericValue + '%';
+    
+    if (numericValue <= 30) {
+      bar.style.backgroundColor = '#d4183d';
+      if (container) container.classList.add('is-danger');
+    } else {
+      bar.style.backgroundColor = '#ffffff';
+      if (container) container.classList.remove('is-danger');
+    }
+  }
+};
+
+:: StoryStylesheet [stylesheet]
+/* Importing fonts from Google Fonts and CDN */
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/walktrought');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Shippori+Mincho&display=swap');
+
+/* Default font styling for body and Twine story content */
+body, tw-story {
+  font-family: "Alike Angular", serif;
+  font-weight: 400;
+}
+
+/* Hide Twine icons */
+tw-icon, tw-include[type="startup"] {
+  display: none;
+} 
+
+/* Add left padding to main story content */
+tw-story {
+  padding-left: 37%;
+}
+
+/* Sidebar styling for Twine interface */
+tw-sidebar {
+  position: fixed;          /* Sidebar stays fixed on screen */
+  top: 0;
+  left: 0;
+  width: 20%;               /* Sidebar takes up 20% of screen width */
+  height: 100vh;            /* Full viewport height */
+  padding: 2em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.7em;
+  color: #888;              /* Light gray text */
+  text-align: left;
+  display: flex;            /* Flexbox layout for vertical stacking */
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #000;         /* Black background */
+}
+
+/* Styling for "healthy" status text */
+span.healthy {
+  color: #fff;              /* White text */
+  font-family:"Bebas Neue", sans-serif;
+}
+
+/* Styling for "danger" status text */
+span.danger {
+  color: #d4183d;               /* Red text for warnings */
+  font-family:"Walktrought", serif;
+}
+
+/* Background bar for sanity meter */
+.sanity-bar-bg {
+  width: 100%;
+  height: 3px;
+  background: #333;         /* Dark gray background */
+  border-radius: 2px;
+  margin-top: 0em; 
+  margin-bottom: 1em;
+}
+
+/* Fill bar for sanity meter (dynamic width) */
+.sanity-bar-fill {
+  height: 100%;
+  width: 100%;
+  background: #fff;         /* White fill */
+  transition: width 0.4s ease; /* Smooth animation when width changes */
+}
+
+/* Divider line inside sidebar */
+tw-sidebar hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #444;   /* Medium gray line */
+  margin: 0.8em 0; 
+  opacity: 0.5;             /* Slight transparency */
+}
+
+/* Push last child element in sidebar to bottom */
+tw-sidebar > :last-child {
+  margin-top: auto;
+  padding-top: 2em;
+}
