@@ -93,39 +93,47 @@ $invText[INVENTORY]
 $itemText[Empty]
 <br>
 $footerText[You maintain your composure.]
-]}
+]
+}
 
 
-:: Start {"position":"100,300","size":"100,100"}
-Recently, a newly opened theme park has seen an astonishing influx of visitors, as if everyone were irresistibly drawn to it.
+:: Start [en] {"position":"100,300","size":"100,100"}
+|p1>[Recently, a newly opened theme park has seen an astonishing influx of visitors, as if everyone were irresistibly drawn to it. 
+(click: ?Page)[(show: ?p2)]]
+|p2)[Particularly captivating is the |highlight>[circus performance] at the |imp>["Dreamland Circus,"] which has just recently opened. 
+(click: ?Page)[(show: ?p3)]]
+|p3)[Word has it that some guests are so enamored with this circus that they visit three to four times a week, which seems quite exaggerated. 
+(click: ?Page)[(show: ?p4)]]
+|p4)[As a content creator, I couldn't resist riding the wave of this popularity to attract viewers, so I booked tickets to the circus. Due to the overwhelming number of attendees, the only remaining options for entry were at night; all other times had already sold out. I had hoped to spend a leisurely day there, but I felt rather helpless.
+(click: ?Page)[(show: ?p5)]]
+|p5)[[[Next->page 1]]]
 
-Particularly captivating is the circus performance at the "Dreamland Circus," which has just recently opened.
-
-Word has it that some guests are so enamored with this circus that they visit three to four times a week, which seems quite exaggerated.
-
-As a content creator, I couldn't resist riding the wave of this popularity to attract viewers, so I booked tickets to the circus. Due to the overwhelming number of attendees, the only remaining options for entry were at night; all other times had already sold out. I had hoped to spend a leisurely day there, but I felt rather helpless. 
-
-[[Next->page 1]]
 (display:"Styles")
 
 
 :: Startup [startup] {"position":"75,25","size":"100,100"}
-{(set: $sanity to 100)
+{
+(set: $sanity to 100)
 (set: $inventory to (a:))
-<!--Style-->
+
+
 (set: $statusText to (text-color:#909090)+(font:"Bebas Neue"))
 (set: $sanityText to (text-style:"expand")+(text-style:"subscript"))
 (set: $sanityNumText to (text-size:2))
 (set: $invText to (text-style:"expand")+(text-style:"subscript"))
 (set: $itemText to (text-color:#666))
-(set: $footerText to (text-color:#444)+(text-size:0.5))}
-
-
+(set: $footerText to (text-color:#444)+(text-size:0.5))
+(set: $type to (char-style: via (t8n-delay: pos * 30) + (t8n: "instant")))
+}
 
 
 :: Styles {"position":"325,150","size":"100,100"}
 {
 (enchant: ?link, (text-color:#d4183d)+(hover-style:(text-style:"tall","condense","shudder")))
+
+(enchant:?highlight, (text-color:#d4183d)+(hover-style:(text-color:red)+(text-style:"expand")+(font: "Walktrought")))
+
+(enchant:?imp, (text-color:#d4183d)+(text-style:"blurrier","blink")+(hover-style:(text-color:red)+(text-style:"smear","tall","fidget","expand")+(font: "Walktrought")))
 }
 
 
@@ -553,6 +561,11 @@ body, tw-story {
 tw-icon, tw-include[type="startup"] {
   display: none;
 } 
+
+/* Hide the Accessibility blue outline*/
+.enchantment-clickblock > :not(tw-enchantment)::after {
+  box-shadow: none;
+}
 
 /* Add left padding to main story content */
 tw-story {
