@@ -9,64 +9,586 @@ ENGL2097_GroupD_FP
   "format-version": "3.3.9",
   "start": "Start",
   "tag-colors": {
-    "footer": "purple",
+    "footer": "red",
     "starter": "yellow",
     "startup": "red",
     "zh-hk": "yellow",
     "en": "blue",
-    "sidebar": "purple"
+    "sidebar": "red",
+    "!notTrans": "green",
+    "Page1": "green",
+    "Page2": "yellow",
+    "Scene1": "orange",
+    "Scene1.2": "orange",
+    "Scene1.3": "orange",
+    "Scene1.4": "orange",
+    "Scene1.5": "orange",
+    "Scene1.6": "orange",
+    "Scene1.7": "orange",
+    "Scene2": "yellow",
+    "Scene2.1": "yellow",
+    "Scene2.2": "yellow",
+    "Scene2.3": "yellow"
   },
   "zoom": 1
 }
 
 
-:: Chase away [en] {"position":"475,375","size":"100,100"}
-"What the hell was that? Get out of my way and stop pissing me off!" I grumbled as he stumbled away.
+:: \ Heading towards the dark forest area [en] {"position":"1850,325","size":"100,100"}
+I hauled Samuel along as we plunged into the forest area just beyond the park’s main grounds. Once inside, we were swallowed by shadows. Streetlights were pitifully scarce, their feeble glow barely carving out a small circle of light around our feet. The place certainly lived up to its eerie name.
+
+"Are you sure this is supposed to be 'safer'?" Samuel’s voice was laced with mockery, yet he was clinging to my arm so tightly I could feel him trembling.
+
+"We just need to find a place to hide for now," I hissed back.
+
+As we forged ahead, a sound suddenly cut through the rustling leaves—a low, rhythmic murmur, like humans whispering just out of sight.
+
+My instincts screamed at me to stay back, but Samuel, driven by a panicked curiosity, insisted on dragging me toward the sound.
+
+You’ve arrived at:
+
+[[The Visitor Service Hub]]
+(display:"Styles")
+
+
+:: \ Page 21 [en] {"position":"2650,375","size":"100,100"}
+Astor reached into his pocket and handed me a worn ID badge. The letters SCP were printed boldly across the top. "Do you know anything about the SCP Foundation?" he asked, his voice low.
+
+"I've heard rumors, but..."
+
+"They're an organization that deals with things that shouldn't exist," Astor interrupted. "We found some files back in the maze. These monsters... before they became this, they were people who hated the rules and constraints of society. They felt suffocated by them."
+
+He looked toward the door, where the mechanical weeping of Mabel still echoed. "It seems that hatred didn't die with them. Their resentment has fermented into something dark, something hungry for revenge. Now, they use the very thing they hated—Rules—to trap and destroy us."
+
+{(if: $isAskingAboutFriend) 
+[[[Next->Page 22A]]]
+(else:)
+[[[Next->Page 22B]]]
+(display:"Styles")}
+
+
+:: Ask [en] {"position":"2100,250","size":"100,100"}
+I edged closer, my voice trembling. "Hello? Please... do you know how we can leave this place?"
+
+The man let out a dry, mocking chuckle. His eyes swept over us with pure scorn. "The park closes at ten-thirty sharp," he said. "Didn't you bother to read the signs? You're lucky I'm not on the enforcement squad. If I were, you wouldn't even be 'present' anymore."
+
+He laughed again, a cold, hollow sound. "The chances of getting out now are slim to none. Once you're stuck here, the park rarely lets go."
+
+His words plunged Samuel and me into a fresh wave of panic. Watching our faces drain of color, the staff member seemed to relish our fear.
+
+"But," he continued with a glint of malicious glee in his eyes, "I do know a place that might grant your little wish. Follow me."
+
+{[[Next->Page 18]]
+(display:"Styles")}
+<!--朋友turning true
+Ending-1
+18A true-->
+
+
+:: Chase away [en Scene1.4] {"position":"475,375","size":"100,100"}
+"What the hell was that? Hey, don’t block the way," I grumbled as he stumbled away.
 
 [[Next->page 4]]
 (display:"Styles")
 
 
-:: Footer [footer] {"position":"75,150","size":"100,100"}
+:: Death [en] {"position":"2900,925","size":"100,100"}
+//Hunted by Mabel//
+(display:"Styles")
+
+
+:: Do not look back, run for your life immediately [en] {"position":"2475,250","size":"100,100"}
+I lunged into the staff passage, my lungs screaming for air. Just as Mabel's mechanical thuds were right behind me, a door cracked open and I was yanked into a dim room.
+
+"Are you okay?" a girl asked, her voice hushed.
+
+"I'm Astor," the boy next to her said. "And I'm Clara," she added.
+
+I struggled to catch my breath. "I'm... thank you. Thank you for saving me."
+
+Samuel, collapsed in the corner, was trembling violently. "Was that... was that Mabel?" he stammered. "She’s... she’s horrible... I’ve lost my friends. We got separated in the chaos... I don't know where they are..."
+
+"I'm so sorry," Clara whispered, placing a hand on his shoulder.
+
+"It’s okay," I said, though my eyes remained fixed on the door. "But do you have any idea what’s happening? Why are we even here? This whole thing... it’s driving me crazy!"
+
+The weight of losing everyone was finally breaking Samuel.
+
+Astor looked at us with a grim expression. "We don't know why we were pulled into this world either," he said, reaching into his bag. "But... we just discovered this."
+
+[[Next -> Page 21]]
+(display:"Styles")
+
+
+:: Don't ask [en] {"position":"2100,375","size":"100,100"}
+We maintained a cautious distance, our eyes never leaving him as we slowly backed away.
+
+"If there's anything you'd like to ask, I'm right here to help," he said, his voice smooth—perhaps too smooth.
+
+Samuel and I exchanged a quick, uncertain glance. We were both torn; every instinct screamed at us to run, yet the dark blue uniform he wore was a symbol of safety according to the rules.
+
+"Did you end up trapped here by mistake?" the staff member asked, tilting his head.
+
+We gave a small, hesitant nod.
+
+"I can lead you to a safe place," he offered, gesturing toward the darker part of the forest.
+
+We were still drowning in doubt, but the rules were the only anchor we had in this nightmare. The ones in dark blue are trustworthy, I reminded myself. With no better options, we stepped into the shadows behind him.
+
+{[[Next->Page 18]]
+(display:"Styles")}
+<!--朋友turning false
+Ending+1-->
+
+
+:: DrifterStory [en] {"position":"2775,800","size":"100,100"}
+We moved like shadows across the open pavement, our breaths held tight. We were so close to the entrance of Colorful World, but then, it happened.
+
+The air behind us grew cold, thick with the smell of ozone and wet fur. Then came the sound—a high-pitched, mechanical whine layered beneath a woman's hollow weeping.
+
+Mabel.
+
+She was faster than before. Her heavy, rhythmic thuds vibrated through the ground, closing the gap with terrifying speed. With no time to run for the open passage, we were driven like cattle into a dark corner, forced to seek shelter in the only place left.
+
+{(if: $drifterHint) 
+[[[Next->DrifterStory2]]]}
+(else:)
+[
+[[Survival]]
+[[Death]]
+]
+(display:"Styles")
+
+
+:: DrifterStory2 [en] {"position":"2900,675","size":"100,100"}
+Just as Mabel’s cold, mechanical claws were about to tear through my throat, a force slammed into me, knocking me aside. It was the drifter. He stood before me, his mind fractured, his eyes wild with a desperate, frantic light.
+
+'My wife... she was... just like this...' he whimpered, before erupting into a defiant scream. 'NOT THEM! NOT AGAIN!'
+
+Mabel tilted her head, a sickening metallic screech emanating from her throat. 'Such a pity. Why are you so afraid of me?'
+
+The sound of tearing flesh filled the room. With his final breath, the man lunged forward, grabbing my sleeve. 'My wife... parking lot... circus back door... keys... in the office...'
+
+His eyes went dull. He had bought us a few minutes of life with his own.
+
+[[Find Mark's letter->Mark's letter in the office]]
+(display:"Styles")
+
+
+:: Ending 1 [en] {"position":"3575,500","size":"100,100"}
+//The Grand Finale: Ending 1//
+
+I held onto the evidence I had gathered within the park. Once released, the news shook the entire nation.
+
+The SCP Foundation acted with clinical efficiency, swiftly placing the park under total lockdown. From that day forward, it became a "Red Zone"—a forbidden land strictly regulated and contained by the Foundation's iron grip.
+
+Yet, in the digital world outside, the cycle of cyber-harassment and systemic injustice continued unabated.
+
+I can still vividly recall every horror I witnessed that day. I can still see the faces of those who were transformed into bloodthirsty, frenzied monsters by the park’s twisted logic. Above all, I carry the weight of my own guilt.
+
+As a media creator who understands the dark mechanics of the internet, I refuse to stand by and watch more victims fall to the "tyranny of the masses." I have decided to use my influence to stand firmly with those who are being unfairly scrutinized by the public eye.
+
+I don't know how many lives I can truly change, but I know one thing: this is the only way to prevent more tragedies like "The Park" from ever happening again.
+(display:"Styles")
+
+
+:: Ending 2 [en] {"position":"3575,650","size":"100,100"}
+//The Grand Finale: Ending 2//
+
+The world remains infested with cyber-harassment and countless injustices, yet you still refuse to lend a helping hand. You remain paralyzed, still feeling that suffocating shame of being the "outlier" or the "minority" in the face of the roaring crowd.
+
+You have become a shadow within the masses—a symbol of the total loss of self.
+
+Despite having witnessed the literal manifestation of malice in that park, you chose the safety of silence over the danger of the truth. The park didn't just trap your body; it successfully harvested your soul. You are now just another cog in the machine that creates monsters.
+(display:"Styles")
+
+
+:: Enter the left door [en] {"position":"2225,675","size":"100,100"}
+We stepped cautiously into the room, only to realize the deafening, rhythmic noise fading into the distance. The scenery shifted; the room turned into a twisting, turning labyrinth.
+
+Astor:
+"Oh no!"
+
+We spun around to block the door before it closed, yet it had already slammed and shut behind us. We are trapped within the maze, having no choice but to follow the fading echoes hoping to seek for an exit. As we wandered, the path grew more confusing, a sense of hopelessness took hold. A thick white mist began to swirl around us, growing denser by  seconds. Lost in the haze of fear and confusion, we all slowly suffocated by the fog, drawing our final breaths in the dark.
+
+[[Go back->Page 16]]
+(display:"Styles")
+
+
+:: Enter the right door [en] {"position":"2225,800","size":"100,100"}
+Recalling all the signboards we had seen along the way, we cautiously opened the right door. Inside was vast and hollow, leaving a single table in this huge room.
+
+There is a piece of paper lying on top of the desk, a paper that notes down the hidden key to the entire mystery of this secret chamber.
+
+---
+
+The Revelation
+
+He never belonged here, not even as a child.
+
+While other children were havinfg fun and gathered in packs, he would be curled up in a corner, immersed in the stories woven within his own mind. He loved to fantasize; he loved his solitude. He wasn't slow, and he wasn't "weird"—he simply refused to follow the trivial rules of this world. 
+
+Yet all his behaviours were viewed as sickness by the adults.
+
+His parents never tried to truly understand him. They dragged him to countless hospitals and made him do endless examinations. At home, they forced him to be "normal." They forced him to speak, to fit in, to smile, and to appease everyone around him. The more he resisted, the deeper their disappointment grew. His parents never truly understand him, 
+
+("Why are you such a failure?" 
+"Why is everyone else normal except for you?")
+
+He could never feel love from his family.
+
+In school, he couldn't blend in; he was a perpetual loner. He was branded with labels: *freak, weirdo, idiot.*
+
+However, his silence only caused him hatred. The teachers would ignore him, dismissing him as a "troubled student." When he got bullied, He would even get blamed on by the teachers *"Why do they only pick on you and no one else? have you ever considered that you were actually the problem?."*
+
+He had done nothing wrong. He had harmed no one. He only wanted to live in his own world. Yet he was told to discard all those "unrealistic fantasies."
+
+No one ever cared what he loved. No one tried to step into his heart. No one ever told him (being different is okay.)
+
+Bit by bit, his spirit was corroded. He began to fear crowds, noise, avoidied to communicate with others. He locked himself away in a bottomless labyrinth—a maze where he was entirely alone, a maze that he could never find the exit.
+
+And so, the quiet child who loved to dream became the monster trapped in this maze, weaving illusions of his own.
+
+---
+
+I noticed another letter on the table; the handwriting matched Mark’s perfectly.
+
+"I think I finally understand why the staffs killed all the vistors who breached the rules. Perhaps the boy in the story is the host? He was always shackled by rules, he hated the and had to give us a taste of what he felt. They crave to punish those who created the rules..."
+
+As I read this, I remember reading similar news reports, bully cases like this happens too frequently and people are all ignoring them. A heavy, hollow feeling overwhelmed my chest.
+
+Astor: "What do we do now?"
+
+Clara: "Let’s see if we can leave here first."
+[[Next ->DrifterStory]]
+(display:"Styles")
+
+
+:: Exit via the Staff Passage [en] {"position":"2475,375","size":"100,100"}
+We sprinted through the staff passage, our lungs burning, driven by the pure terror of the mascot behind us. But as we burst through the exit into the open air, the realization hit me like a physical blow: it was a setup.
+
+That staff member—the one who had "helped" us—was standing right there. He wasn't running. He wasn't hiding. He was waiting.
+
+Before I could even scream, his hands were upon us. With a swift, mechanical brutality, he seized our throats. There was a sharp, splintering CRACK as he snapped our necks like dry twigs.
+
+The last thing I felt was a surge of white-hot agony. Then, the park, the rules, and the screams all vanished into an eternal, silent dark.
+(display:"Styles")
+
+
+:: Find the key [en] {"position":"3325,550","size":"100,100"}
+[[Unlock back door]]
+(display:"Styles")
+
+
+:: Footer [footer] {"position":"200,25","size":"100,100"}
 {(display:"Sidebar")}
 
 
-:: Pretend everything is fine [en] {"position":"975,350","size":"100,100"}
-“I don’t know… don’t you feel something’s off here?” I whispered.
+:: Head for the Maze to hide [en] {"position":"1725,500","size":"100,100"}
+We trudged all the way to the entrance of the maze. After making sure it was safe inside, we slipped into a corner and hid— I remembered the rules: (out there is not safe right now.)
 
-Samuel raised an eyebrow. “Where exactly?”
+Samuel: “Fuck! What the hell is going on out there? And what’s with these stupid fucking rules?”
 
-“The whole atmosphere,” I said. “Did you notice the staff at the park gates?”
+Me: “I don’t know… but one thing’s for sure—this is no ordinary place. The only thing I do know is this: if we break their rules, we’ll see each other in hell, just like we promised.”
 
-He chuckled. “Them? What’s wrong with them? Aside from looking like they’re full of resentment while saying the most dreamy lines. Honestly, they remind me of myself at work—smiling through the grind. Ha!”
+Samuel: “Spit it out! Are you trying to get us killed talking like that?”
 
-His laugh rang out, casual and dismissive, cutting through my unease.
+Me: “Weren’t we already asking for death the moment we stepped in here?”
 
-Murder False / Ending +0 
-I let the thought slip away, deciding not to dwell on it any further. The music and chatter swallowed my doubts, and for the moment, I convinced myself everything was fine.
-[[Next->page 8]]
+Samuel: “Uh… come to think of it, why are there even these rules? It’s so strange.”
+
+He asked the very question that had been burning at the back of my mind.
+
+*Who are “they,” really?*
+
+I gazed across our surroundings. The maze wasn’t just a tangle of branching paths—it was filled with small rooms in between. I remembered I read reviews on this maze. Visitors are told to use hints hidden in these rooms to navigate a story, piecing clues together to find the exit. It was similar with the 'escape rooms' trending these days.  drawing and attracting crowds of curious players.
+
+However, the maze in front of me had something off from all those visitor reviews.
+
+The maze was cloaked in a strange, thin mist fog that blurs all the path ahead. Making us pretty much impossible to see where the corridor ended.
+
+Samuel got curious and told me to go find the source of the weird noise. He grabbed my arm tightly and dragged me to a forked way where two rooms were in front of us.
+Then he stopped. Turned to me.
+
+“Where do *you* think that sound is coming from?”
+
+[[The room with faint traces of blood at the threshold]]
+[[The room with a doorway that looked unnervingly clean]]
 (display:"Styles")
 
 
-:: Response [en] {"position":"475,250","size":"100,100"}
-"Hey are u fine? Get up first,” I said, his voice edged with unease. I was confused and ask him more “What did you mean by those words just now?”
+:: Head for the Park Exit [en] {"position":"1725,350","size":"100,100"}
+We stumbled breathlessly towards the amusement park’s exit, only to find the iron gates closeed.
+“Damn it! Why did they close so early today?” Samuel roared, slamming his fist against the cold metal. 
 
-The vagrant’s eyes flickered with something between fear and warning. “The rules… they’re real. Don’t break them.”
+A chill ran down my spine. I remembered the rigid rules, the ones no one ever questioned. The blackout in the circus was around 10:30. It had only been a couple of minutes after the show ended. The park was supposed to close at 11:30. Someone had closed the gates an hour early. 
 
-With that, he spun on his heel and bolted into the shadows, leaving only the echo of his words hanging in the air.
+“What the hell is happening? What even are those things?” I whispered, my voice trembling.
 
-(set: $sanity to it - 70)
+Samuel lost all hope in his eyes. “So this is the anomaly you warned me about? Thats some crazy horror. No wonder there were rumors about people keep coming back, its a one way park afterall.”
+
+“Nah, Theres no way,” I shot back, scanning the chaos around us. “If this ever hit the internet, no one would dare set foot here again.”
+
+The scene was a nightmare. Tourists scattered in every direction, their screams attracted the bloodthirsty creatures, prowling the grounds, hunting with relentless fury.
+
+Everyone had broken the rules. They had nothing that they could do except from accepting the fate of the monsters killing them.
+
+“What do we do?” Samuel’s voice cracked,he had finally lost it. Fear finally broke through his bravado shattering his last bit of hope.
+
+I swallowed hard, forcing calm into my words. “It’s too dangerous here. Let’s move to a nearby zone. Staying out in the open is same as suicide.”
+
+[[Next-> Heading towards the dark forest area]]
+(display:"Styles")
+
+
+:: Hide in a room within the Staff Passage [en] {"position":"2475,500","size":"100,100"}
+My instinct warned me that the exit might be another trap, so we dove deeper into the passage, searching for any possible cover. Just as the thundering steps of Mabel were about to reach us, a door swung open and a pair of hands yanked us inside.
+
+"Are you guys okay?" a girl whispered.
+
+"I'm Astor," one said. "And I'm Clara," the other added.
+
+We exchanged hurried introductions in the dim light. Samuel collapsed against the wall, clutching his chest. "Yeah... thank God you saved us," he panted. Then, his voice rose in pitch, his eyes darting around frantically. "Do you have any idea what’s going on? Why are we here? This whole thing... it’s driving me crazy!"
+
+The pressure of losing everything was finally breaking him.
+
+Astor looked at us with a heavy expression. "We don't know why we were brought to this world either. But," she paused, pulling something from her jacket, "we just discovered this..."
+
+[[Next -> Page 21]]
+(display:"Styles")
+
+
+:: Immediately scramble back a few steps [en] {"position":"1600,400","size":"100,100"}
+"What the hell are you doing? We have to go!" Samuel barked, lunging forward to grab my arm. He pulled me into a dead sprint toward the exit. Behind us, the staff members stopped their pursuit, watching us with those twisted, frozen expressions.
+
+I tripped and hit the ground hard near the gate.
+"Holy sh*t, you scared the crap out of me!" Samuel gasped, breathless. "What the hell is going on?"
+
+I didn't answer. My eyes were fixed on the brochure I’d dropped. The ink had changed. The once-boring safety tips were gone, replaced by words written in a violent, bleeding crimson.
+0. The park closes at 10:30 PM. Everyone except staff must vacate the premises. If you fail to leave before the gates close, seek a safe location immediately. Do not move until you are certain the danger has passed.
+0. After hours, patrol staff will check equipment every three hours. You may seek help from them if necessary.
+0. There are two types of staff: those in dark blue uniforms are trustworthy. Those in red uniforms are senior regulators. Do not let them find you. If they catch you after hours, you will receive the "worst possible treatment."
+0. If you hear strange noises behind you, do not turn around. It is Mabel, the park mascot. Do not look at her; making eye contact is extremely dangerous.
+0. If you experience hallucinations or auditory delusions, stay away from the source or close your eyes for one minute until they pass.
+0. Avoid strong light sources. Approaching them will result in unbearable pain and misfortune.
+
+"More rules..." I muttered. I knew this place was off, but I never expected a massacre.
+
+Samuel looked over my shoulder, his face turning pale. "What kind of sick joke is this? 'Worst possible treatment'?"
+
+I scanned our surroundings. In the distance, a group of those red-uniformed silhouettes was drifting toward us. I checked the map in the brochure. "We aren't safe here. We need to move, now!"
+
+What will you do?
+[[Head for the Park Exit]]
+[[Head for the Maze to hide]]
+(display:"Styles")
+
+
+:: Mark's letter in the office [en] {"position":"3200,550","size":"100,100"}
+//Found Mark's letter//
+
+The Incident:
+A student who had just finished her college entrance exams dyed her hair a vibrant color and got a tattoo to celebrate the end of years of grueling study. Her family took her on a trip to celebrate. But after posting photos on social media, she became the target of a vicious cyber-harassment campaign. Netizens attacked her character, accusing her of being "indecent" and violating the conservative modesty expected of a student. They claimed she was only trying to "attract male attention." Unable to withstand the cruelty of this relentless online violence, the girl ultimately ended her life by jumping into a river.
+
+The Park is located right near that site.
+
+The Entity Representing This Trauma: The Giant Mascot of the Park.
+
+The Confession:
+As a member of the media, I witnessed this tragedy unfold. I felt a deep sympathy for her, but in the end, I remained silent. I was paralyzed by the fear of being targeted by the same mob.
+
+The Revelation from Mark:
+Mark realized that the rules were designed as a trap to benefit "Them." The rules are not just there to make you suffer the consequences of disobedience; they are a psychological engine designed to lead you, step by step, into a dead end—leaving you defenseless and ready for slaughter.
+
+[[Find the key]]
+(display:"Styles")
+
+
+:: Page 15 [en] {"position":"1975,700","size":"100,100"}
+I had no choice but to follow them. There are endless corridors after walking out of the room, twisting like a labyrinth without end.
+
+Along the way, we notice strange markings etched into the walls. We had no idea when they were placed there. We followed the signs bringing us into another chamber.
+
+This room is different—cleaner, stripped of clutter, its emptiness unsettling in its order.
+
+“Look,” Samuel whispers, pointing. “There’s something here… like a letter.”
+
+On the paper, scrawled in a hurried hand, are words that chill the blood:
+
+I have never seen so many powerful creatures, especially the illusion itself—it trapped me and other visitors in this world ruled by its twisted rules. They are obsessed with obedience, slaughtering anyone who dares to defy them. I don’t know their true motives, but they seem to sense that my presence threatens their plan. These monsters are beyond the level we could handle. It will take many of us to fight them. I must gather all the data and send it back before moreof us are killed by these monsters.
+
+First, I have to survive. This maze belongs to part of the illusion. One wrong step, one careless choiceis going to bring me death in confusion and despair. I have marked all the paths I’ve taken to avoid its traps and monsters. If anyone who see this get lost, please follow my signs.
+
+— Mark Davis, former SCP staff
+
+I whisper, “When was this written?” 
+
+No one responded, it was clearly that no one had a single clue if its legit.
+
+Yet we have no choice now but to follow Mark’s trail, hoping that his path might lead us out alive.
+
+[[Next ->Page 16]]
+(display:"Styles")
+
+
+:: Page 16 [en] {"position":"2100,725","size":"100,100"}
+We follow Mark’s trail, his markings guide us through the endless maze.  Signs hang above each paths filled with illusions.
+“This is the right way.” “Everyone goes this way.” “You’ll regret not choosing this.” “This is the normal path. Illusionized words and phrases are filled all over the road.
+
+Yet Mark’s hints never fails us. There are traps illusion to lure the unwary, Mark's hints dodges all the traps and danger.
+
+As we arricved the exit of the maze, there was one final set of doors left for us to choose, Mark's markings vanished, leaving us stranded at the doors of decisions. Two doors stand side by side, squeaky and creepy noise lies between the door.
+
+Marching feets and a hollow echo of applausecame from the left door.
+
+Sigh of wind comes from the right door, broken whispers rise and fall like fragments of forgotten prayers.
+
+The air thickens, pressing against our skin. The maze demands a choice.
+
+We must decide:
+
+[[Enter the left door]]
+[[Enter the right door]]
+(display:"Styles")
+
+
+:: Page 18 [en] {"position":"2225,300","size":"100,100"}
+He led us back to the main thoroughfare of the park. My breath hitched in my throat—what I saw was impossible. The street that had been a slaughterhouse moments ago, littered with bodies and soaked in crimson, was now unnaturally clean. It was as if the chaos had been erased from existence.
+
+"What... what happened?" Samuel stammered, his eyes bulging. He rubbed them vigorously, convinced he was hallucinating. "There was blood everywhere... how is it all gone?"
+
+I was just as paralyzed by shock. I knelt and touched the ground; it was dry, pristine, without a single trace of the carnage we had witnessed. I looked up at the staff member in the dark blue uniform.
+
+"Is this it?" I whispered.
+
+He offered an unfathomable smile, one that sent a chill down my spine. "This is as much help as I can provide," he replied.
+
+To my surprise, Samuel actually muttered a "thank you" to him. Without a word of farewell, the man turned and strode away, merging back into the darkness.
+
+{(if: $isAskingAboutFriend) 
+[[[Next->Page 19A]]]
+(else:)
+[[[Next->Page 19B]]]
+(display:"Styles")}
+
+
+:: Page 19A [en] {"position":"2350,250","size":"100,100"}
+I was still dissecting the staff member's behavior in my mind when I decided to steal one last look at his retreating figure. My blood turned to ice. His uniform—the one that was supposed to be a safe, reliable blue—had bled into a sickeningly vivid crimson.
+
+"Samuel, don't—"
+
+Before I could finish my warning, a piercing scream ripped through the air, only to be cut short by a sudden, suffocating silence.
+
+Then, I heard it. From the darkness directly behind me came a sound that defied logic: a woman’s desperate weeping, layered with the erratic, metallic crackle of an electrical short circuit.
+
+I couldn't move. I didn't want to know what was back there. Was my mind finally snapping? Was it a hallucination, or was it Her... that nightmare in the shape of a mascot?
+
+<!--According to Rule 4: Do not turn around. Do not acknowledge it.-->
+
+At this moment, you should:
+[[Do not look back, run for your life immediately]]
+(display:"Styles")
+
+
+:: Page 19B [en] {"position":"2350,375","size":"100,100"}
+I froze as I realized the staff member’s uniform had bled from a safe blue into a glaring, hostile scarlet.
+
+Samuel lost it. A sharp, jagged scream escaped his throat before I could cover his mouth. It was the one sound we couldn't afford to make.
+
+The sound acted like a beacon. The giant mascot, Mabel, snapped her head toward us. The moment her dead, glass eyes locked onto our horrified faces, she began to charge. Her movements were a sickening mix of mechanical stutters and predatory speed.
+
+There was no time for a plan. There was only the primal urge to survive.
+
+Where will you go?
+[[Exit via the Staff Passage]]
+[[Hide in a room within the Staff Passage]]
+(display:"Styles")
+
+
+:: Page 22A [en] {"position":"2775,325","size":"100,100"}
+"What does that even mean?" I asked, my voice trembling with rising anger. "If they hate the system, why take it out on us? Why drag innocent people into this nightmare?"
+
+My heart sank as the silence stretched. "Are you saying... there’s no way out?"
+
+Astor stared at the SCP badge in his hand, his brow furrowed. "Not necessarily," he said after a long pause. "I have a friend—a VIP regular. We spent a lot of time here before... before all this. He once mentioned a hidden service tunnel inside 'Colorful World' that leads directly beyond the park perimeter."
+
+He looked up, his eyes flashing with a renewed sense of purpose.
+
+"It’s our only shot. Let’s move."
+
+[[Next->Page 23]]
+(display:"Styles")
+
+
+:: Page 22B {"position":"2775,450","size":"100,100"}
+Samuel’s eyes were bloodshot, his voice cracking as he yelled, "What does that even mean? If they hate the world, why take it out on us? Why drag innocent people into their nightmare?"
+
+Astor stepped forward, his voice calm but heavy. "I know it’s unfair, Samuel. But anger won't get us through the night."
+
+I looked at them both, my heart sinking. "So... is that it? Are we trapped here forever?"
+
+Astor paused, staring at the SCP badge in his hand as if searching for an answer. After a long silence, he looked up. "Maybe not. I have a friend—a VIP regular. We spent a lot of time here before the 'change.' He once mentioned a service tunnel deep within 'Colorful World' that leads straight beyond the park perimeter."
+
+He tightened the straps on his bag, his eyes flashing with a renewed sense of purpose.
+
+"Let’s move."
+[[Next->DrifterStory]]
+(display:"Styles")
+
+
+:: Page 23 [en] {"position":"2900,325","size":"100,100"}
+But when I finally reached him, something was horribly wrong. Samuel’s eyes were hollow, devoid of any spark of life. His face was as pale as parchment, and his clothes hung in bloody rags. He moved with a sickening rigidity, like a puppet jerked by invisible strings. He didn't respond to my voice; he didn't even blink. Instead, his lips were curled into a faint, grotesque smile—the exact same icy, unsettling grin worn by the monsters in the red uniforms.
+
+'Watch out! Don't go near him! He’s not Samuel anymore!' Astor’s voice cut through the air, sharp and desperate. He lunged forward, grabbing my shoulder to pull me back. 'They’ve taken him! He’s one of them now!'
+
+I snapped back to my senses and tried to retreat, but 'Samuel' was faster. His hand—cold as a corpse—clamped around my throat with staggering strength, as if he intended to crush my windpipe. At that heart-stopping moment, a familiar figure charged between us: it was the drifter from the corridor.
+
+He stood as a shield before me, his mind clearly fractured beyond repair.
+
+'My wife... they did this to her too...' he whimpered, before his voice broke into a defiant roar. 'NOT AGAIN!'
+
+Mabel’s voice echoed, dripping with mockery: 'What a shame. Why are you two so afraid of me?'
+
+After the drifter was brutally mauled, he gasped out his final words with his dying breath: 'My wife... parking lot... circus back door... keys... office...'
+
+[[Find Mark's letter->Mark's letter in the office]]
+(display:"Styles")
+
+
+:: Pretend everything is fine [en Scene1.7] {"position":"975,350","size":"100,100"}
+"I’m fine," I replied quickly, trying to steady my voice. Was I really that rattled by the drifter earlier? "Maybe I’m just feeling a bit under the weather today."
+
+Samuel gave a noncommittal grunt. He didn’t press any further, his attention already drifting back to the crimson tent.
+
+[[Next->page 8]]
+(display:"Styles")
+
+<!--Ending‑1: Murder True -->
+
+
+:: Response [en Scene1.3] {"position":"475,250","size":"100,100"}
+I gave my wrists a hard tug. Seeing I couldn't break free, I sighed and looked down at him. "Get up first. What exactly did you mean by... they?"
+
+The homeless man stammered, his eyes wide with terror, |shake>["Those rules... they're real... Don't break them... Don't... "] With that, he spun around and bolted.
+
 [[Next->page 4]]
 (display:"Styles")
 
 
-:: SCP前工作人員 {"position":"700,100","size":"100,100"}
-留下的一篇不知名的報章
-他們討厭規矩，所以設立規矩
-前SCP
+:: SamuelTalks [en Scene1.5] {"position":"700,175","size":"100,100"}
+{
+(if: $isHonestAboutDrifter)
+[Don't know, He just popped up in front of me out of nowhere and kept rambling on and on... |shake>[It's kind of weird.]]
+(else:)
+[(text-style:"sway")[Let him be, is just a weirdo.]]
+<br>
+Seeing that Samuel and I were attending the same circus performance, I suggested, "You’re watching this show too? Let’s head in together!"
+<br>
+[[Sure->page 5]]
+(display:"Styles")}
 
 
-:: Sidebar [sidebar] {"position":"200,150","size":"100,100"}
+:: Sidebar [sidebar] {"position":"325,25","size":"100,100"}
 {(append: ?Sidebar)[
 $statusText[STATUS]
 <br>
@@ -97,26 +619,53 @@ $footerText[You maintain your composure.]
 }
 
 
-:: Start [en] {"position":"100,300","size":"100,100"}
-|p1>[Recently, a newly opened theme park has seen an astonishing influx of visitors, as if everyone were irresistibly drawn to it. 
-(click: ?Page)[(show: ?p2)]]
-|p2)[Particularly captivating is the |highlight>[circus performance] at the |imp>["Dreamland Circus,"] which has just recently opened. 
-(click: ?Page)[(show: ?p3)]]
-|p3)[Word has it that some guests are so enamored with this circus that they visit three to four times a week, which seems quite exaggerated. 
-(click: ?Page)[(show: ?p4)]]
-|p4)[As a content creator, I couldn't resist riding the wave of this popularity to attract viewers, so I booked tickets to the circus. Due to the overwhelming number of attendees, the only remaining options for entry were at night; all other times had already sold out. I had hoped to spend a leisurely day there, but I felt rather helpless.
-(click: ?Page)[(show: ?p5)]]
-|p5)[[[Next->page 1]]]
+:: Stand your ground, too terrified to move [en] {"position":"1600,200","size":"100,100"}
+I stood rooted to the spot, not daring to flinch. The rule was clear: Do not leave without instruction. I clung to that sentence like a lifeline, quickly shoving my phone into my pocket. My entire body shook as I stared into the contorted, hideous face of the creature before me.
 
+The staff member tilted its head, its voice a sickening, dry rasp.
+
+"So obedient," it hissed. "And yet... you are still too late."
+
+Before I could even gasp, its jagged, inhuman claw lunged forward. It didn't just stab me; it skewered my chest. A dull, cold shock radiated from the wound, followed by a searing heat that consumed my lungs.
+
+I looked down, watching my own blood drench the very rules I had tried so hard to follow. Darkness began to cloud my vision, and as my heart gave its final, frantic thud, I realized the cruelest truth of this park:
+
+In here, the rules weren't meant to save you. They were only meant to keep you still long enough for the slaughter.
+(display:"Styles")
+
+
+:: Start [en] {"position":"100,300","size":"100,100"}
+Recently, a newly opened theme park has seen an astonishing influx of visitors, as if everyone were irresistibly drawn to it. 
+
+Particularly captivating is the |highlight>[circus performance] at the |imp>["Dreamland Circus,"] which has just recently opened. 
+
+Word has it that some guests are so enamored with this circus that they visit three to four times a week, which seems quite exaggerated. 
+
+As a content creator, I couldn't resist riding the wave of this popularity to attract viewers, so I booked tickets to the circus. Due to the overwhelming number of attendees, the only remaining options for entry were at night; all other times had already sold out. I had hoped to spend a leisurely day there, but I felt rather helpless.
+
+[[Next->page 1]]
 (display:"Styles")
 
 
 :: Startup [startup] {"position":"75,25","size":"100,100"}
 {
+<!--Status & Stats-->
 (set: $sanity to 100)
+(set: $currentStatus to "Calm")
 (set: $inventory to (a:))
 
+(set: $drifterHint to false)
+(set: $friendMurder to false)
+(set: $isAskingAboutFriend to false)
 
+<!--Story Beats-->
+(set: $isHonestAboutDrifter to false)
+(set: $isHonestAboutStaff to false)
+(set: $isHonestAboutStaff to false)
+(set: $trustsAstor to false)
+(set: $hasSeenColorRule to false)
+
+<!--Style-->
 (set: $statusText to (text-color:#909090)+(font:"Bebas Neue"))
 (set: $sanityText to (text-style:"expand")+(text-style:"subscript"))
 (set: $sanityNumText to (text-size:2))
@@ -127,153 +676,276 @@ $footerText[You maintain your composure.]
 }
 
 
-:: Styles {"position":"325,150","size":"100,100"}
+:: Styles {"position":"450,25","size":"100,100"}
 {
 (enchant: ?link, (text-color:#d4183d)+(hover-style:(text-style:"tall","condense","shudder")))
 
-(enchant:?highlight, (text-color:#d4183d)+(hover-style:(text-color:red)+(text-style:"expand")+(font: "Walktrought")))
+(enchant:?highlight, (text-color:#d4183d)+(hover-style:(text-color:red)+(text-style:"tall","condense")+(text-size:1.2)))
 
 (enchant:?imp, (text-color:#d4183d)+(text-style:"blurrier","blink")+(hover-style:(text-color:red)+(text-style:"smear","tall","fidget","expand")+(font: "Walktrought")))
+
+(enchant: ?shake, (text-color:red)+(text-style:"bold","rumble"))
 }
 
 
-:: Tell him about the strange atmosphere [en] {"position":"975,225","size":"100,100"}
-I forced a smile. 
+:: Survival [en] {"position":"2900,800","size":"100,100"}
+We scrambled into the cramped office, slamming the door just as Mabel’s heavy stabs at the wood began. In the dim light of a flickering monitor, I found a crumpled envelope on the desk. It was a letter from Mark, one of the lead designers.
 
-“I’m fine,” 
+As I read, a cold realization washed over me.
 
-Samuel tilted his head, studying me. 
+"Samuel, Astor... look at this," I whispered, my voice trembling. "The rules... they aren't meant to save us. Mark discovered the truth before he 'disappeared.' The monsters didn't just want us to suffer for breaking the rules; they wanted to condition us. Each rule is a psychological hook, designed to lead us step-by-step into a dead end where we can no longer fight back."
 
-“You’re sure? Don’t tell me that homeless guy spooked you.”
+The 'Safe' Blue Uniforms, the 'Exit' signs, the 'Don't Look Back' command—it was all a setup to make our movements predictable. They profit from our blind obedience.
 
-“Maybe I’m just not feeling well today,” I muttered
+"To escape," I said, looking at the door being battered from the outside, "we have to stop thinking like victims. We have to find the flaws in their logic."
 
-He gave a small shrug, apparently satisfied, and turned his attention back to the crowd. The music swelled, the crimson tent loomed larger, and the line pressed forward.
+[[Found Mark's letter->Mark's letter in the office]]
+(display:"Styles")
 
-But inside, my pulse wouldn’t settle. His casual dismissal only deepened the chill in my chest. The word from the brochure echoed again in my mind—dealt with.
 
-Samuel didn’t notice. He was already caught up in the excitement, while I was left alone with the gnawing suspicion that I had just stepped into the wrong story, one that might not let me walk back out.
+:: Tell him about the strange atmosphere [en Scene1.7] {"position":"975,225","size":"100,100"}
+“I don’t know… don’t you feel something’s off here?” I whispered, glancing around.
 
-Ending‑1: Murder True 
-The choice to stay silent sealed my fate.
+"Where?" Samuel asked, unbothered.
+
+“The whole atmosphere,” I said. “Did you notice the staff at the park gates?”
+
+"Them?" Samuel chuckled. "What’s wrong with them? Other than the fact that they looked completely miserable while sprouting all that 'magical' nonsense? Honestly, they looked exactly like me when I'm clocked in at the office. Haha!"
+
+I didn't push the subject further. Maybe I was just being paranoid.
+
 [[Next->page 8]]
 (display:"Styles")
 
+<!--Ending +0 -->
 
-:: page 1 [en] {"position":"225,300","size":"100,100"}
-As dusk approached and the "Monster Project" began, I entered the park and walked through a long corridor adorned with flags.
 
-Beside the corridor was a vast parking lot, darkened for some reason, adding an eerie ambiance to the bustling park.
+:: The Visitor Service Hub [en] {"position":"1975,300","size":"100,100"}
+Following Samuel, I crept forward, my heart hammering against my ribs. We peeked into the Service Hub; it was hollow and silent. But just as we stepped over the threshold, a voice materialized from the shadows right next to us.
+
+"What exactly are you doing here?"
+
+That twisted, inhuman face loomed in the dim light. "AAAAAAAH! RUN!" Samuel didn't hesitate; he grabbed me and lunged back into the night.
+
+But I skidded to a halt, my eyes locked on the figure. "Wait!" I hissed.
+
+This staff member wasn't like the other. He was dressed in a crisp, dark blue uniform—immaculate and professional. There was no blood, no jagged claws. He looked like a beacon of order in this chaotic nightmare.
+
+According to the rules, the blue-uniformed staff were trustworthy.
+
+Samuel seemed to realize this too, his frantic pace slowing to a stop. I took a tentative step toward the man, my breath hitching.
+
+Should we ask him for the way out?
+(link: "Ask")
+[(set: $isAskingAboutFriend to true)(go-to: "Ask")]
+(link: "Don't ask")
+[(set: $isAskingAboutFriend to false)(go-to: "Don't ask")]
+(display:"Styles")
+
+
+:: The room with a doorway that looked unnervingly clean [en] {"position":"1850,525","size":"100,100"}
+I trembled behind Samuel, waiting for the door to swing open.
+
+There was nothing inside. Just an empty room. I felt relax, until I felt something; a cold mist seeping up from the floor, slowly coiling around my ankles. Then it hit me.
+
+*The rules.* That's the monster's hallucination— exactly what they'd warned us about.
+
+"Close your eyes right now!" I shouted. 
+
+Before we could even react, the mist had already risen to our necks. The thick, suffocating mist crawled into our lungs, I could feel it reaching every single bone of my body, freezing every organ and cell to death. 
+
+Neither of us made it.
+
+As my conciousness faded gradually, I took my one last breath.
+
+**Cause of death: Hunted by the first kind of monsters —The Illusion.**
+
+{[[Go back ->Head for the Maze to hide]]
+(display:"Styles")}
+
+
+:: The room with faint traces of blood at the threshold [en] {"position":"1850,675","size":"100,100"}
+The bloodstains at the doorway brought me an unease I couldn't shake. I stood behind Samuel as he pushed the door open.
+
+As he opened the door, i see two guys, two guys who were both drenched in blood. They flinched at the sight of us, just as startled as we were.
+
+We greeted them carefully as if wewere scared if they were one of those monsters or impostors of the park.
+
+*"Hello. My name's Astor."*
+*"I am Clara."*
+
+The moment we stepped inside,(the door shut behind us with a loud bang). It is one of the maze's cruel tricks—once one has chosen his own paths, there will be no turning back for him. Every step is a gamble.
+
+I lowered my voice. "Do you two know what's happening?"
+
+Clara shook her head. "We have no idea."
+
+Astor added, "We saw those… *things*… and ran straight here. Everything was fine just a few days ago and now there are monsters and crazy shit i never thought that actually exist."
+
+I pressed further. "Have you been here before?"
+
+Astor nodded. "A friend of mine is a VIP member of this group. He used to bring me and a group of friends here all the time. It was just few days ago, Clara and I brought our parents here. They said they were coming too… but then we couldnt even contact them, they just vanished like that.'
+
+My mind got flooded with so many questions—so many question marks in my mind that I barely knew where to start. Before I could kept on asking, Samuel cut in.
+
+"Look!" He pointed. "What the hell is that big red arrow?"
+
+Astor frowned. "That's strange… we have never seen that before."
+
+Samuel's eyes lit up with certainty. "Let's follow it."
+
+Clara's agreed without doubting anything. "The exit from here leads straight to the park gate. If we go this way… maybe we can actually get out of here."
+
+[[Next ->Page 15]]
+(display:"Styles")
+
+
+:: Unlock back door [en] {"position":"3450,550","size":"100,100"}
+The path to the parking lot was more desolate than we imagined. The streetlamps flickered like dying pulses, stretching our shadows into grotesque shapes that seemed to chase us. The sickly sweet scent of the park had faded, replaced by the sharp tang of motor oil and a faint, metallic smell of fresh blood.
+
+Just as we neared the entrance, a piercing screech tore through the silence. From the gloom, dozens of twisted figures emerged—red-uniformed monsters and hollow-eyed puppets like Samuel, standing shoulder to shoulder to form an impenetrable wall of flesh and machinery.
+
+'How did they know?' Luna whispered, her voice trembling. I gripped the five keys in my hand, remembering Mark’s warning about 'hallucinatory manipulation.' The entities knew our plan. They were using the rules to cage us.
+
+'It’s an illusion!' Astor hissed, brandishing a broken table leg. 'The entities are controlling them. We have to break through!'
+
+We charged. Astor fought like a man possessed, fending off the reaching claws while Luna and I sprinted into the depths of the parking lot. We reached a fork where three tunnels diverged, each bathed in a different light.
+
+The First Tunnel: Littered with red uniforms, echoing with the hum of heavy machinery.
+
+The Second Tunnel: A weathered Mabel doll sat at the entrance under a soft, inviting glow—yet it felt like a predator's trap.
+
+The Third Tunnel: Simple and unadorned, with a single beam of steady, natural light shining from the far end.
+
+Luna was frantic. 'Which one? If we choose wrong, we’re dead!'
+
+Astor recalled Rule 6: 'Stay away from bright lights; they will bring you agony.' But I looked at the steady beam in the third tunnel. Mark’s letter flashed in my mind: The rules are the trap. The truth lies in the gaps.
+
+'The "Rule" wants us to stay in the dark,' I gritted my teeth, pointing to the third tunnel. 'That light... that's the only place the illusion can't reach. Follow me!'
+
+The roars behind us grew deafening as the monsters broke through Astor’s defense, closing in step by step. Their silhouettes twisted and contorted in the dim light, sending a bone-chilling shiver down my spine. 'There’s no time to hesitate!' I gritted my teeth, running firmly at the third tunnel.
+
+{(if: $sanity > 20)[[[Next->Ending 1]]]
+(elseif: $sanity < 10)[[[Next->Ending 2]]]
+(display:"Styles")}
+
+
+:: page 1 [en Scene1] {"position":"225,300","size":"100,100"}
+As dusk approached, I entered the park and walked through a long corridor adorned with flags depicting the park’s characters, accompanied by an upbeat yet oddly distorted tune—rather peculiar. 
+
+Beside the corridor was a vast parking lot, darkened for some reason, leaving only a faint beam of light in the distance, adding an eerie ambiance to the bustling park. I hurried past that unsettling area.
  
-[[Next->page 2]]
-(display:"Styles")
+{[[Next->page 2]]
+(display:"Styles")}
 
 
-:: page 10 [en] {"position":"1350,300","size":"100,100"}
-BOOM!
-
+:: page 10 [en Scene2.2] {"position":"1350,300","size":"100,100"}
+{|highlight>[BOOM! ](set: $sanity to it - 8)
+<br>
 All in a sudden, the lights snapped off.
-
-No warning, no flicker, just sudden, absolute darkness, as though someone had yanked the power cord from the entire tent.
-
-Four or five hundred people froze, their voices rising in confusion. Children began to cry, their wails piercing the black. Adults cursed, muttered, some tried to stand, others pushed toward the exits. The air was thick with panic, the kind that spreads fast when no one knows what’s happening.
-
-It was pure chaos. The darkness felt endless, pressing in from every side. Just when the crowd’s unease was about to boil over, a voice cut through the chaos—calm, theatrical, chilling.
-
-
-A spotlight shone towards the middle of the stage, the host stood there and picked up his mic, “Let the show… begin!”
-
+<br>
+No warning, no flicker, just sudden, absolute darkness, as though someone ripped the plug from the wall, plunging the entire venue into an abyss.
+<br>
+A crowd of nearly five hundred was left reeling in the dark. The air filled with the sharp wails of terrified children, the muffled curses of adults, and the chaotic scuffling of those trying to flee.
+<br>
+Ten minutes of suffocating darkness passed.
+<br>
+Then, a voice crackled through the silence. Cold. Precise.
+<br>
+The Host: "Let the show... BEGIN!"
+<br>
 [[Next->page 11]]
+(display:"Styles")}
+
+
+:: page 11 [en Scene2.3] {"position":"1475,300","size":"100,100"}
+A blood-curdling shriek ripped through the darkness. In the dim light, I saw a staff member in a red uniform—his hand, now a jagged claw, had gutted a man holding a professional camera. Fresh blood began to seep from the jagged wound. The staffer’s face was a twisted, contorted mask of flesh, utterly inhuman.
+
+Panic erupted. Some tried to call for help, only to find the lines dead. Others, driven by a morbid, stunned reflex, actually held up their phones to record. As more rules were broken, more of these "alternates" emerged from the shadows. Violators were slaughtered on the spot.
+
+The Host: "Enjoy the show."
+
+"Help me—!" A young man nearby screamed, breaking the silence rule. In an instant, his upper body was severed from his waist, collapsing at my feet. A spray of warm, metallic blood drenched my clothes.
+
+My mind went completely numb. The stench of iron filled the air.
+
+Suddenly, the creature turned toward me. "Photography is strictly prohibited inside the venue," it hissed, its distorted face inching closer.
+
+What will you do?
+[[Stand your ground, too terrified to move]]
+[[Immediately scramble back a few steps]]
 (display:"Styles")
 
 
-:: page 11 [en] {"position":"1475,300","size":"100,100"}
+:: page 2 [en Scene1.2] {"position":"350,300","size":"100,100"}
+All in a sudden, the homeless man grabbed my hand with huge strength, stared at me looking hopeless and panic. He whispered in a spooky tone, |shake>["They’re coming… no one can escape…not even a single one..."]
 
-
-
-:: page 2 [en] {"position":"350,300","size":"100,100"}
-Suddenly, a homeless man grabbed my hand with huge strength, staring at me with hopelessness. He whispered, "They’re coming…"
-    
-[[Talk to him->Response]]
-[[Push him out of my way->Chase away]]
+(link: "Talk to him")
+[(set: $drifterHint to true)(set: $friendMurder to false)(go-to: "Response")]
+(link: "Push him out of my way")
+[(set: $drifterHint to false)(set: $friendMurder to true)(go-to: "Chase away")]
 (display:"Styles")
 
 
-:: page 4 [en] {"position":"600,300","size":"100,100"}
-Samuel patted me on the shoulder. 
-(if: $hasHint is true)[
-Me: "Idk man, he just told me a bunch of weird stuff." 
-]
-(else:)[
-Me: "I think he's just a psychopath. Let's not worry about it."
-]
-[[Next->page 5]]
+:: page 4 [en Scene1.5] {"position":"600,300","size":"100,100"}
+Someone startling me with (text-style:"blink")[a pat on the shoulder suddenly.]
+
+"Whoa! You scared me! Samuel."
+
+Yes, that's my college friend, Samuel. We've been through a lot together. 
+
+"What are you doing here?"
+
+"I’ve seen a lot of people visiting this place recently. ''My friend told me that the circus show is the most brilliant one he had ever seen.'' Therefore, I am here to watch it. And you?
+This park has become so popular lately; of course, I had to ride the(that?) wave of popularity. That I've heard some visitors are completely obsessed, going three or four times a week—that seems exaggerated."
+
+"Three or four times? Who goes to the same park multiple times? Crazy!"
+
+"By the way, who was that person earlier?"
+(link: "Tell Samuel the truth")[(set: $isHonestAboutDrifter to true)(go-to: "SamuelTalks")]
+(link: "Just a weirdo")[(set: $isHonestAboutDrifter to false)(go-to: "SamuelTalks")]
 (display:"Styles")
 
 
-:: page 5 [en] {"position":"725,300","size":"100,100"}
-The crowd was thick, and we shuffled forward in the endless line until it was finally our turn to enter.
+:: page 5 [en Scene1.6] {"position":"725,300","size":"100,100"}
+The queue was long. It took us nearly twenty minutes to finally reach the entrance. There, the staff stood with identical, mechanical smiles plastered across their faces. Their professionalism was admirable, yet there was an eerie perfection to it—something I couldn't quite place.
 
-At the gates, every staff member wore the same perfectly curved smile—polished, professional, and yet disturbingly identical, as if carved onto their faces. It was admirable in its precision, but the longer I stared, the more unnatural it felt, like mannequins programmed to mimic joy.
+"Welcome to the park. Have a pleasant day," the man in front of us said, his voice as hollow as a recording.
 
-The attendant before us spoke in a flat, mechanical tone, each syllable rehearsed to perfection:
-“Welcome to the park. We wish you a pleasant day.”
-
-Without breaking that eerie smile, they handed us a glossy brochure. The pages were filled with cheerful colors and neatly printed rules—safety reminders, ride instructions, the usual. But as I flipped through, I couldn’t shake the feeling that something was missing, something hidden between the lines.
-
-The words seemed ordinary, yet the atmosphere pressed down on me, whispering how the consequences of the rules were far more serious than I thought.
+He handed each of us a brochure. I flipped through it, but it was just a collection of mundane safety rules. On the surface, it seemed utterly unremarkable.
 
 [[Next->page 6]]
 (display:"Styles")
 
 
-:: page 5.5 (optional) 可刪減 {"position":"725,425","size":"100,100"}
-我拿著手冊看著地圖，遊樂設施種類除了最多人去的馬戲團，其他設施也就跟其他樂園沒有什麼差別。
+:: page 6 [en Scene1.6] {"position":"850,300","size":"100,100"}
+We arrived at the main gate of the circus and joined the queue. The tent was a striking shade of crimson; with the upbeat music and the constant hum of chatter, the place felt lively—on the surface, at least.
 
-我瞄了一眼右下角的沈悶的樂園守則，
+"Welcome."
 
-守則的部分突然變成腥紅色的樣子，我揉了揉眼睛，心想著難道看錯了？
+Please adhere to the following rules:
+0. Photography and phone calls are strictly prohibited inside.
+0. While waiting, do not shout or chat; do not disturb the performers.
+0. When the host prompts the audience, you must respond with thunderous applause.
+0. In case of an emergency, remain calm and follow our directions. Do not leave the premises on your own.
 
-守則那部份有回復正常。
+Violators will be dealt with by the staff.
 
-你沒事吧？
+I stared at that final line, a sudden shiver involuntary rippling through my body.
 
-帶著疑慮前往馬戲團的場地
+Dealt with. What kind of place uses a word like that?
 
-visual 閃爍+突然出現？
+It was all too bizarre. First that terrified drifter, and now this unsettling atmosphere. My suspicious nature began to kick in. I haven’t stumbled into a horror novel, have I?
 
+Samuel noticed my hesitation and tried to comfort me. "Are you okay? You’ve been acting strange since we got here."
 
-:: page 6 [en] {"position":"850,300","size":"100,100"}
-We arrived at the grand entrance of the circus, waiting in line with the others. The tent loomed above us, its fabric a deep crimson that seemed almost alive under the glow of the lights. Cheerful music spilled out from within, mingling with the chatter of excited visitors, creating a lively facade that only made the unease in my chest grow stronger.
-
-“Welcome,” a voice intoned.
-
-Another set of rules. The brochure read:
-
-No filming or phone calls inside the venue.
-
-During the wait for performances, refrain from loud talking or chatter that might disturb the performers preparing backstage.
-
-When the host requests audience reaction, spectators must respond with enthusiastic applause.
-
-In the event of an accident, remain calm, follow our instructions, and do not attempt to leave on your own.
-
-Violators will be dealt with by staff.
-
-My eyes froze on that final line. Dealt with. A shiver ran down my spine before I could stop it.
-
-Something about this place was wrong. First the terrified vagrant’s warning, now this strange atmosphere—too polished, too controlled. My suspicious nature couldn’t help but spin darker possibilities. Was I stepping into the pages of a horror novel?
-
-Samuel noticed my unease and placed a hand on my shoulder.
-“You alright? You look pale ever since we got here.”
-
-And now the choice pressed against me like a weight:
+What will you do?
 [[Pretend everything is fine]]
 [[Tell him about the strange atmosphere]]
 (display:"Styles")
 
 
-:: page 8 [en] {"position":"1100,300","size":"100,100"}
+:: page 8 [en Scene2] {"position":"1100,300","size":"100,100"}
 We slipped into our seats, the tent buzzing with anticipation.
 
 Though the rules clearly forbade filming, I couldn’t resist. I slid my camera into a barely noticeable spot, its lens peeking out just enough. Truth be told, no one seemed to care—plenty of visitors were snapping photos, chatting loudly, breaking every rule printed in that brochure.
@@ -286,244 +958,21 @@ His words rolled with theatrical grandeur, each syllable designed to electrify t
 
 “And now, let’s give a big round of applause to our performers today!”
 
-The audience erupted, clapping and cheering with a feverish energy. The performers stepped forward, their smiles wide, their movements sharp, as if choreographed down to the smallest gesture.
-
-I felt the weight of the rules again—applause when asked, silence when told. And though everyone around me seemed swept up in the excitement, a chill lingered at the back of my mind.
+The audience erupted, clapping and cheering with a feverish energy.
 
 [[Next->page 9]]
 (display:"Styles")
 
 
-:: page 9 [en] {"position":"1225,300","size":"100,100"}
-The show unfolded. First came the clown, dressed in vibrant colors, juggling bright balls with practiced ease. Every so often he fumbled deliberately, drawing laughter from the children whose giggles rippled through the tent.
+:: page 9 [en Scene2.1] {"position":"1225,300","size":"100,100"}
+The show began as a clown clad in a vibrant costume stepped onto the stage, juggling colorful balls with effortless skill. His routine was fluid, cleverly punctuated by deliberate mishaps that had the children shrieking with laughter.
 
-Then the beast‑master strode in, commanding a pride of golden lions. Their coats gleamed under the spotlights, their bodies powerful and tense. At his signal they leapt through iron hoops, bounded through rings of fire, and rose on hind legs in perfect balance. The audience roared with applause, swept up in the spectacle.
+Next, the beast tamer appeared with a pride of large felines—lions, by the look of them, boasting golden coats and formidable builds. At the crack of a whip or a simple command, they executed a series of stunts: leaping through iron hoops, diving through rings of fire, and balancing on their hind legs.
 
-For two hours the performances surged one after another, each act more extravagant than the last. The atmosphere climbed to a fever pitch, the crowd clapping and cheering until the tent itself seemed to tremble with sound.
-
-And yet, beneath the thunderous ovation, I felt the faint echo of the rules—those strange, rigid commands—and the memory of the vagrant’s warning. As the finale approached, I couldn’t shake the thought: perhaps the true show was only just beginning.
-(8 &9 match)
+The crowd erupted in thunderous applause, the energy inside the tent soaring to a fever pitch. Just like that, the two-hour spectacle drew toward its conclusion.
 
 [[Next->page 10]]
 (display:"Styles")
-
-
-:: 一 [zh-hk] {"position":"225,600","size":"100,100"}
-天色漸暗（怪物計畫開始），到達樂園範圍後，我走過一條佈滿樂園角色旗幟的長廊。
-長廊旁邊有一個偌大的停車場，燈光不知為何全熄滅，為熱鬧的樂園添上了幾分怪異。
-
-[[下一步->二]]
-
-
-:: 不耐煩地趕走他 [zh-hk] {"position":"475,675","size":"100,100"}
-「什麼鬼東西，大叔別擋路」
-踉蹌地爬走
-流浪漢hint false
-朋友murder true 
-    
-[[下一步->四]]
-
-
-:: 九 [zh-hk] {"position":"1225,600","size":"100,100"}
-一開場穿著鮮豔服裝的小丑走上台，手裡拿著彩球，開始拋接。動作熟練而流暢，不時穿插一些滑稽的失誤來逗樂觀眾。小孩們笑得特別開心。接著馴獸師帶著幾隻大型貓科動物上台——看起來是獅子，毛色金黃，體格雄壯。牠們在馴獸師的指令下做出各種動作：跳過鐵環、鑽過火圈、後腿站立...
-
-大家都熱烈地拍手歡呼，場內氣氛升至最高點。就這樣兩個小時的表演將近尾聲
-
-[[下一步->十]]
-
-
-:: 二 [zh-hk] {"position":"350,600","size":"100,100"}
-突然一個流浪漢猛然抓住了我的手，臉上充斥著恐慌的表情，顫抖地說：「牠們來了...」 
-    
-[[回應他]]
-[[不耐煩地趕走他]]
-
-
-:: 五 [zh-hk] {"position":"725,600","size":"100,100"}
-排隊的人很多，我們排隊進場
-門口的每位工作人員掛著一樣弧度機械般的笑容，專業得讓人敬佩又話講不出哪裡奇怪
-
-面前的人機械般地說著
-
-「歡迎光臨樂園，祝你有愉快的一天」
-遞了一份樂園手冊給我們，守則都是說注意安全什麼的。
-
-[[下一步->六]]
-
-
-:: 假裝自己沒事 [zh-hk] {"position":"975,550","size":"100,100"}
-我沒事
-朋友murder true/ending-1
-不會是被剛才的流浪漢嚇的吧
-可能今天有點不舒服吧
-嗯對方沒再理
-
-[[下一步->八]]
-
-
-:: 八 [zh-hk] {"position":"1100,600","size":"100,100"}
-進場安坐後
-
-雖然規矩說不能拍攝，但我依舊偷偷地拿出我的相機放在一個極起不起眼的位置。
-
-其實這些規矩都沒人理會，很多人都照樣拍照和大聲喧嘩。
-
-表演很快便开始了，主持人大聲的介紹將全程氣氛拉滿
-
-Ladies and gentle man welcome to the most精彩的show in land...
-
-and now lets give a big around of apluse to our performers today. 
-
-表演者所有人都熱烈地拍手歡呼。
-
-[[下一步->九]]
-
-
-:: 六 [zh-hk] {"position":"850,600","size":"100,100"}
-我們來到馬戲團的大門，排隊等候入場。馬戲團的帳幕接近鮮紅色，配上一陣陣歡快的音樂及遊客的暢談聲頗爲熱鬧。
-
-歡迎光臨
-
-又是守則，
-請遵守以下的守則，確保
-1.場內嚴禁拍攝及進行通話。
-2.表演等侯期間，請勿大聲喧嘩及聊天，影響表演者準備舞台。
-3.當主持人要求觀眾給予反應時，觀眾必須給予熱烈的掌聲。
-4.發生意外時，請保持冷靜,聽從我們的指示,不要自行離開。
-
-違規者將被工作人員處理。
-我看著最後一行字，身體不由自主地打了個顫抖。
-
-處理。
-
-這太奇怪了。先是一開始突然出現驚恐的流浪漢，還有這裡的氛圍似乎有很奇怪的地方,向來多疑的我忍不住作出更多猜想。我不會進入了什麼恐怖小說裡面吧？
-
-Samuel這時候安慰我道：
-你沒事吧，怎麼由剛才開始就那麼不對勁？
-你這時會選擇？
-[[假裝自己沒事]]
-[[告訴他這裡異樣的氛圍]]
-
-
-:: 十 [zh-hk] {"position":"1350,600","size":"100,100"}
-然後——
-
-燈光驟然熄滅。
-
-毫無預兆。
-
-像有人拔掉了表演場地的電源。
-
-四五百個人被突然的狀況而不知所措。有小孩的哭聲，亦有大人的謾罵聲，亦有人想離開。10分鐘過後，突然傳來主持人的聲音。
-
-主持人： Let the show ---begin
-
-[[下一步->十一]]
-
-
-:: 十一 [zh-hk] {"position":"1475,600","size":"100,100"}
-一把刺耳的慘叫聲划破了全場的黑暗。只見一個穿著紅色制服的工作人員，尖手刺破那個拿著專業拍攝器材的男人的肚皮，血液慢慢從傷口處流淌出來。那工作人員的臉分明不是正常的人臉，臉容歪曲。人們開始大叫，有些人開始報警求助，接通後對面根本無人回答。
-甚至有些人驚訝得拿著電話紀錄這一切。隨著越來約多人違反場內規則，那些穿著紅色制服的偽人不斷出現，違規者一律被殘忍殺害。
-
-救命啊！-- 
-還未說完的那年輕人違反表演期間大喊的規則，被怪物砍掉的上半身倒在我的面前。血全噴到我的衣服上
-
-一陣血液濃郁的充斥著我的周圍，我大腦頓時發愣。
-
-這時，面前的怪物突然轉身向我走來：場內不得進行攝影，看見面前的假人步步逼近，
-這時你會選擇：
-
-[[站在原地，不敢擅自離開]]
-[[立刻退後幾步]]
-
-
-:: 告訴他這裡異樣的氛圍 [zh-hk] {"position":"975,675","size":"100,100"}
-你不覺得這裡有點奇怪嗎？
-
-哪裏？
-
-就整體的氛圍很怪，你有看到剛才樂園大門那些工作人員嗎？
-
-他們？有什麼問題？除了一個個充滿怨恨的樣子在說著最夢幻的模樣，簡直像極了我上班的模樣 哈哈
-朋友murder false/ending +0
-我沒再多想
-
-[[下一步->八]]
-
-
-:: 四 [zh-hk] {"position":"600,600","size":"100,100"}
-朋友 Samuel 拍了拍我的肩膀。
- (if: $hasHint is true)[
- 我：「不知道剛才那個人是誰。他一直叨叨唸唸的很奇怪。」
- ]
- (else:)[
- 我：「神經病一個，不用管。」
- ]
- [[下一步->五]]
-
-
-:: 回應他 [zh-hk] {"position":"475,550","size":"100,100"}
-你先起來吧 剛才你這些話是什么意思？
-流浪漢說：「那些規則...是真的... 不要違反他們... don’t…」
-說罷便轉身跑走
-流浪漢hint true
-朋友murder False
-    
-[[下一步->四]]
-
-
-:: 樂園人偶的故事 {"position":"900,100","size":"100,100"}
-剛考完高考的學生為了慶祝高中埋頭苦讀生活的結束，染上了閃亮的秀發及紋身，並一家人一起旅行慶祝。放上社交媒體後卻遭到網民的人身攻擊，斥責該名女學生拋頭露臉，有違學生身上所帶有的保守，更被網民斥是吸引男人的注意。最終女學生抵受不住網絡上殘忍的暴力，最終跳河自殺。
-樂園就在這附近。
-
-所代表的主力怪物：樂園的大型人偶
-
-
-:: 立刻退後幾步 [zh-hk] {"position":"1600,675","size":"100,100"}
-你本能地害怕的立刻退後幾步，大腦卻空白一遍。
-
-Samuel 幹嘛啊，快走啊
-說罷便拉著我往出口跑走，
-背後的工作人員看追不過也沒再跟著我們
-
-跑到門口時我踉蹌地跌了下來
-Samuel：你媽的嚇死我啦 什麼情況啊？
-我整理自己的思緒，拿起跌在地上的旅遊手冊，發現上面的樂園守則，與剛進來時那沈悶的守則不一樣。上面鮮紅色的字明顯的可怕。上面寫著：
-
-歡迎各位旅客來臨樂園。為了保障各位的人身安全及有一個愉快的體驗，請各位嚴格遵守樂園以下的守則。
-1.本樂園關閉的時間為今晚上10點，除了工作人員外其他人必須離開樂園範圍。若遊客未能在樂園大門關閉前離開，請務必留在安全的地方，直至確保周圍無任何危險，才能在自由地行走。
-2.閉園後，負責巡邏的工作人員每隔三小時便會進行設備檢查，確保樂園營業一切正常。若有需要，可以尋求他的幫忙。
-3.晚上只有少量的工作人員留守。本樂園的工作人員分為兩種，穿者深藍色的制服是普通的工作人員，你可以相信他們，他們無辦法對你怎麼樣；穿著紅色制服的是負責規管樂園的資深工作人員，他們發現你閉園後仍逗留在樂園而給予你最差的待遇。
-4.背後出現怪聲的時候，不要回頭，更不要理會。（那是樂園玩偶美寶的時候，請不要注視，理會他，）
-5.看到有強光的地方，請遠離那裡，靠近他只會令你痛不欲生。
-希望你在樂園渡過愉快的一天！
-
-又是守則。
-我就知道，這樂園異常得明顯，只是意想不到的是這裏竟然發生大量血案。
-
-Samuel: 我靠這什麼奇怪的守則
-
-
-:: 站在原地，不敢擅自離開 [zh-hk] {"position":"1600,550","size":"100,100"}
-你站在原地，不敢輕舉妄動。
-因為你
-規則裡寫除非場內指示，否則觀眾不能擅自離開
-你立刻收起手機，顫抖的盯著那吓人的臉。面前的工作人員開口道
-這麽遵守規則，還是晚了
-對方利用非人形的尖手，直接刺入你的胸膛，你在驚恐下看著自己失去致死。
-
-
-:: 開始 [zh-hk] {"position":"100,600","size":"100,100"}
-最近有個新開主題樂園異常地多人拜訪，大家都像受到誘惑般紛紛到訪
-
-尤其是這個奇夢馬戲樂園的馬戲團表演，還有最近新開的
-
-聽說有遊客對這個奇夢馬戲樂園痴迷得甚至一周去三四次不等...可為誇張
-
-作為網絡創作者，我當然要蹭一波流量吸引觀眾收看，因此訂了馬戲團的入場票。
-由於入場人數眾多，馬戲團的入場票只剩下晚上的時間可供選擇，其他時間都早已滿座。本以為能夠輕鬆遊玩一整天的我感到無可奈何。
-
-[[下一步->一]]
 
 
 :: StoryScript [script]
@@ -544,6 +993,12 @@ window.updateSanityBar = function(value) {
     }
   }
 };
+
+//var audio = document.createElement('audio');
+//audio.src = 'https://cdn.freesound.org/previews/511/511496_9405724-lq.mp3';
+//audio.play();
+//audio.loop = true;
+
 
 :: StoryStylesheet [stylesheet]
 /* Importing fonts from Google Fonts and CDN */
@@ -635,4 +1090,74 @@ tw-sidebar hr {
 tw-sidebar > :last-child {
   margin-top: auto;
   padding-top: 2em;
+}
+
+/* BG */
+tw-story[tags~="Scene1"] {
+  background-image: url("https://i.imgur.com/B5LeAg1.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+tw-story[tags~="Scene1.2"] {
+  background-image: url("https://i.imgur.com/z8ugpSu.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+tw-story[tags~="Scene1.3"] {
+  background-image: url("https://i.imgur.com/8LGJxNw.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+tw-story[tags~="Scene1.4"] {
+  background-image: url("https://i.imgur.com/SAnw4OA.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+tw-story[tags~="Scene1.5"] {
+  background-image: url("https://i.imgur.com/6ZyFNwf.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+tw-story[tags~="Scene1.6"] {
+  background-image: url("https://i.imgur.com/Rkm7CuM.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+tw-story[tags~="Scene1.7"] {
+  background-image: url("https://i.imgur.com/YaiLNGb.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+tw-story[tags~="Scene2"] {
+  background-image: url("https://i.imgur.com/rfn6rnr.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+tw-story[tags~="Scene2.1"] {
+  background-image: url("https://i.imgur.com/vuv3nqm.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+tw-story[tags~="Scene2.2"] {
+  background-image: url("https://i.imgur.com/hank6Lw.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+tw-story[tags~="Scene2.3"] {
+  background-image: url("https://i.imgur.com/2bGNZnF.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* Text visibility*/
+tw-passage{
+  	border-radius: 20px;
+	background-color: transparent;
+	background-color: rgba(34, 34, 34, 0.6);
+	padding: 10px 4px;
 }
