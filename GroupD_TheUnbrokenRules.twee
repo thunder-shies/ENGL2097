@@ -1,0 +1,3044 @@
+:: StoryTitle
+GroupD_TheUnbrokenRules
+
+
+:: StoryData
+{
+  "ifid": "FF205ABC-F3E7-4B22-86E3-54FB49E04A8F",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "tag-colors": {
+    "footer": "red",
+    "starter": "yellow",
+    "startup": "red",
+    "zh-hk": "yellow",
+    "en": "blue",
+    "sidebar": "red",
+    "!notTrans": "green",
+    "Page1": "green",
+    "Page2": "yellow",
+    "Scene1": "orange",
+    "Scene1.2": "orange",
+    "Scene1.3": "orange",
+    "Scene1.4": "orange",
+    "Scene1.5": "orange",
+    "Scene1.6": "orange",
+    "Scene1.7": "orange",
+    "Scene2": "yellow",
+    "Scene2.1": "yellow",
+    "Scene2.2": "yellow",
+    "Scene2.3": "yellow",
+    "end": "purple",
+    "letter": "green",
+    "variable": "red",
+    "Inventory": "green",
+    "?": "yellow",
+    "Scene2.4": "yellow",
+    "Scene2.5": "yellow",
+    "Scene3": "orange",
+    "Scene3.1": "orange",
+    "Scene3.2": "orange",
+    "Scene3.3": "orange",
+    "Scene3.4": "orange",
+    "Scene3.6": "orange",
+    "Scene4": "yellow",
+    "Scene4.1": "yellow",
+    "Scene4.2": "yellow",
+    "Scene4.3": "yellow",
+    "Scene5\"": "blue",
+    "Scene5": "orange",
+    "Scene5.1": "orange",
+    "Scene5.2": "orange",
+    "Scene6": "yellow",
+    "Scene6.1": "yellow",
+    "Scene6.2": "yellow",
+    "Scene6.3": "yellow",
+    "Scene7": "orange",
+    "Scence7.1": "orange",
+    "Scene7.1": "orange",
+    "Scene7.3": "orange",
+    "Scene7.2": "orange",
+    "Scene7.4": "orange",
+    "Scene7.5": "orange"
+  },
+  "zoom": 0.6
+}
+
+
+:: Bad Ending 10 [en end Scene7.1] {"position":"5300,525","size":"100,100"}
+{(set: $sanity to 0)
+(set: $dialogs to (a: 
+  "We vaguely remembered the rule about seeking help from the security guard.",
+  "Gathering my courage, I asked, Do you know how to get from here to the parking lot?",
+  "The guard tilted his head.",
+  "Then he let out a strange, broken laugh.",
+  "You really think… you can escape?",
+  "Before we could react, he struck.",
+  "Pain exploded through us, and our bodies collapsed to the floor.",
+  "Our vision dimmed.",
+  "The last thing we saw was his twisted smile.",
+  "|shake>[Cause of death: Asked the guard for help.]"
+))
+
+(set: $names to (a: "", "Me", "", "", "Security", "", "", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/253/253637_2971247-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page34]]
+]
+
+
+:: Bad Ending 11 [en end] {"position":"6700,1100","size":"100,100"}
+{(set: $sanity to 0)
+(set: $dialogs to (a: 
+  "The moment we stepped toward the exit, a sharp, tearing pain ripped through our bodies.",
+  "Our vision blurred.",
+  "Our thoughts dissolved.",
+  "Piece by piece, our minds slipped away, swallowed by the illusion.",
+  "In the end, we dissolved, endlessly, into the park’s unending dreamscape...",
+  "|shake>[Cause of death: Illusion consumed us.]"
+))
+
+(set: $names to (a: "", "", "", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/731/731716_15403889-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[(link: "Restart")[(restart:)]]
+]
+
+
+:: Bad Ending 3 [en end Scene3.2] {"position":"1875,450","size":"100,100"}
+{
+(set: $sanity to it - 8)
+(set: $dialogs to (a: 
+  "We followed the strange voices and pushed the door open.",
+  "There was nothing inside. Just an empty room. //Just as relief washed over me, a pale mist surged up from the floor—silent, rising like a tide.//.",
+  "|imp>[A warning from the rules flashed through your mind.] That's the monster's hallucination— exactly what they'd warned us about." ,
+  "Damn it! Close your eyes!",
+  "Before we could even react, the mist had already risen to our necks. The thick, suffocating mist crawled into our lungs, //I could feel it reaching every single bone of my body, freezing every organ and cell to death. //
+!",
+  "…I’m sorry…",
+  "Samuel’s voice drifted through the fog. Neither of us made it.",
+  "//As my conciousness faded gradually, (text-style:'fade-in-out')[I took my one last breath.]//",
+  "|shake>[Cause of death: Hunted by the first kind of monsters —The Illusion.]"
+))
+
+(set: $names to (a: "", "", "", "Me", "", "Samuel", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+(button:)[[Go back->Head for the Maze to hide]]
+]
+
+
+:: Bad Ending 5 [en end Scene4.3] {"position":"2775,1025","size":"100,100"}
+{
+(set: $sanity to $sanity - 10)
+
+(set: $dialogs to (a: 
+  "I tried unlocking the door one last time, betting everything on this final attempt. The lock didn’t even click. Another wrong answer.",
+  "Then— it laughed.",
+  "Not the soft, hesitant voice from before. This was the child’s laugh twisted into something higher, sharper— like glass being crushed slowly in someone’s fist.",
+  "We covered our ears as the fog at our feet began to rise, thickening, tightening around our lungs.",
+  "The maze swallowed us whole.",
+  "In the end, we suffocated in the spreading mist, trapped forever in this world of stories and rules we never chose.",
+  "Death Message: Your answer came from others. Your “self” came from others. In the end, you became just another note someone else wrote."
+))
+
+(set: $names to (a: "", "", "", "", "", "", "THE END"))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+(button:)[[Go Back->page22.B]]
+]
+
+
+:: Bad Ending 6 [en end Scene6.2] {"position":"4150,1025","size":"100,100"}
+{
+(set: $sanity to $sanity - 8)
+
+(set: $dialogs to (a: 
+  "Her razor-sharp claws sliced through the air in a freezing arc.",
+  "Astor didn’t even have time to scream before his throat was torn open.",
+  "The world before our eyes began to shake and collapse, drowning us in a suffocating darkness stained red with blood.",
+  "Mabel’s twisted face became the final nightmare burned into our minds before consciousness faded away."
+))
+
+(set: $names to (a: "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+[[Go back->page29.A]]
+]
+
+
+:: Bad Ending 6.1 [en end Scene5.2] {"position":"3200,875","size":"100,100"}
+{
+(set: $sanity to $sanity - 10)
+
+(set: $dialogs to (a: 
+  "We stepped into the room—and immediately realized the once‑loud noises were fading away.",
+  "The space around us wasn’t the same room at all, but a twisting maze.",
+  "This is bad.",
+  "We spun around to push the door open, but it had already slammed shut. Locked in, we followed the distant sounds, hoping for an exit. But the deeper we went, the more lost we became. The white fog thickened, swallowing the corridors, swallowing our breath.",
+  "In confusion and fear, we suffocated in the maze."
+))
+
+(set: $names to (a: "", "", "Astor", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/393/393824_1931580-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page 25.B]]
+]
+
+
+:: Bad Ending 7 [en end Scene6.2] {"position":"3800,1225","size":"100,100"}
+{
+(set: $sanity to $sanity - 8)
+
+(set: $dialogs to (a: 
+  "Mabel tilted her head and let out a childlike giggle. Then, without warning, she lunged at us.",
+  "Her razor-sharp claws tore through flesh with ease. Screams echoed through the narrow alley as warm blood splashed across the walls.",
+  "One by one, we were dragged into the darkness. The last thing I saw was Mabel’s torn mascot face staring at me with that horrifying mechanical smile."
+))
+
+(set: $names to (a: "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/393/393824_1931580-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page28.B.2]]
+]
+
+
+:: Bad Ending 8 [en end Scene7.3] {"position":"5300,800","size":"100,100"}
+{(set: $sanity to it - 10)
+(set: $dialogs to (a: 
+  "The moment we saw the red-uniformed guard’s face—twisted and identical to the other staff—we panicked and bolted.",
+  "He heard us instantly.",
+  "A horrible, delighted laugh tore out of him as he sprinted after us.",
+  "Samuel gasped, That’s not a guard—he’s one of them!",
+  "The guard closed in, his footsteps pounding right behind us.",
+  "When he reached our side, he leaned in with a chilling grin.",
+  "According to regulations,",
+  "I must now perform… street cleaning.",
+  "Before we could react, he struck.",
+  "Pain exploded through us as we collapsed, terror swallowing everything.",
+  "|shake>[Cause of death: Caught by the guard’s rule-trap.]"
+))
+
+(set: $names to (a: "", "", "", "Samuel", "", "", "Guard", "???", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/253/253637_2971247-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page34.B]]
+]
+
+
+:: Bad Ending 9 [en end Scene7.1] {"position":"5725,1375","size":"100,100"}
+{(set: $sanity to 0)
+(set: $dialogs to (a: 
+  "We approached him carefully.",
+  "Excuse me… where’s the employee passage?",
+  "He looked at us and let out a low, eerie laugh.",
+  "Still smiling, he led us out of the office and straight to the passage entrance.",
+  "Just when we thought we were safe, his voice turned cold behind us:",
+  "No one is allowed to remain in the park after 10:30 PM.",
+  "That’s when we realized—",
+  "we’d walked right into a rule-trap.",
+  "He was still a red-uniform staff member.",
+  "According to regulations,",
+  "street cleaning begins now.",
+  "Pain hit instantly.",
+  "We collapsed, helpless.",
+  "|shake>[Cause of death: Trusted the guard.]"
+))
+
+(set: $names to (a: "", "Me", "", "", "", "Security", "", "", "", "Security", "Security", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[(link: "Restart")[(restart:)]]
+]
+
+
+:: Chase away [en Scene1.4] {"position":"475,575","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  'What the hell was that? Hey, don’t block the way',
+  'I grumbled as he stumbled away.'
+))
+(set: $step to 1)
+(set: $names to (a: "Me", ""))
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "Reunion with Samuel")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: DialogBox {"position":"250,175","size":"100,100"}
+{
+<!-- ============================================
+     CORE UI COMPONENT - DIALOGUE BOX
+     Displays character dialogue with typewriter animation
+     Handles progression through dialogue steps
+     Key Variables Used:
+     - $dialogs: Array of dialogue lines
+     - $step: Current dialogue index
+     - $msgName: Current speaker name
+     - $canNext: Can player advance to next line
+     - $isTyping: Currently animating text
+     ============================================ -->
+<!-- 1. DIALOG BOX STRUCTURE -->
+<div class="msg-box">
+  |DialogueArea>[|nameWrapper>[(if: $msgName is not "")[<div class="msg-name">|nameContainer>[$msgName]</div>]]
+  
+  <div class="msg-content">
+    |box>[
+      |typed>[(print: $dialogs's ($step))]
+      (change: ?typed's chars, via (t8n-delay: pos * 30) + (t8n: "instant"))
+      <span class="next-char">|hintNode>[]</span>
+    ]
+    ]
+  </div>
+</div>
+
+<!-- 2. INITIALIZE CURRENT SENTENCE STATE -->
+(set: $canNext to false)
+(set: $isTyping to true)
+(set: $clickLock to false)
+(set: $currentText to $dialogs's ($step))
+
+<!-- 3. SAFE TIMER LOGIC -->
+|timer>[
+  (live: ($currentText's length * 30ms + 500ms))[
+    (if: $isTyping)[
+      (replace: ?hintNode)[ > ]
+      (set: $canNext to true)
+      (set: $isTyping to false)
+    ]
+    (replace: ?timer)[] <!-- Stop timer completely by replacing itself -->
+    (stop:)
+  ]
+]
+|clickUnlock>[]
+
+<!-- 4. GLOBAL CLICK MONITORING -->
+(click-rerun: ?DialogueArea)[
+  (if: $clickLock)[
+    (stop:)
+  ]
+  (else-if: $isTyping)[
+    <!-- FIRST CLICK: Show full text -->
+    (set: $clickLock to true)
+    (set: $isTyping to false)
+    (set: $canNext to true)
+    (replace: ?box)[
+      |typed>[(print: $dialogs's ($step))]
+      <span class="next-char">|hintNode>[ > ]</span>
+    ]
+    (replace: ?timer)[]
+    (replace: ?clickUnlock)[
+      (live: 60ms)[
+        (set: $clickLock to false)
+        (replace: ?clickUnlock)[]
+        (stop:)
+      ]
+    ]
+  ]
+  (else-if: $canNext and not $clickLock)[
+    <!-- SECOND CLICK: Advance to next sentence -->
+    (set: $clickLock to true)
+    (set: $canNext to false)
+    (set: $step to it + 1)
+
+    (if: $textTriggerStep > 0 and $step is $textTriggerStep)[
+          (show: ?tunnelInfo)
+          (set: $textTriggerStep to 0)
+      ]
+      
+    (if: $letterTriggerStep > 0 and $step is $letterTriggerStep)[
+      (show: ?revealLink)
+      (set: $letterTriggerStep to 0) 
+    ]
+      
+    (if: $audioTriggerStep > 0 and $step is $audioTriggerStep)[
+      <!-- Use (print:) to dynamically generate audio effect tags -->
+      (print: "<audio src='" + $audioUrl + "' autoplay style='display:none;'></audio>")
+      (set: $audioTriggerStep to 0)
+    ]
+
+    (if: $popupTriggerStep > 0)[
+        (if: $step is $popupTriggerStep)[
+          (show: ?PopupWindow)
+          (set: $popupTriggerStep to 0) 
+        ]
+      ]
+    
+    (if: $step <= $dialogs's length)[
+      (set: $msgName to $names's ($step))
+      (if: $msgName is not "")[
+        (replace: ?nameWrapper)[<div class="msg-name">|nameContainer>[$msgName]</div>]
+      ](else:)[
+        (replace: ?nameWrapper)[]
+      ]
+      
+      (replace: ?hintNode)[]
+      (replace: ?box)[
+        |typed>[(print: $dialogs's ($step))]
+        (change: ?typed's chars, via (t8n-delay: pos * 30) + (t8n: "instant"))
+        <span class="next-char">|hintNode>[]</span>
+      ]
+      
+      <!-- RESTART TIMER LOGIC (remaining code unchanged) -->
+      (set: $isTyping to true)
+      (set: $clickLock to false)
+      (set: $currentText to $dialogs's ($step))
+      (replace: ?timer)[
+        (live: ($currentText's length * 30ms + 500ms))[
+          (if: $isTyping)[
+            (replace: ?hintNode)[ > ]
+            (set: $canNext to true)
+            (set: $isTyping to false)
+          ]
+          (replace: ?timer)[]
+          (stop:)
+        ]
+      ]
+    ]
+    (else:)[
+      <!-- ALL DIALOGUE END LOGIC -->
+      (if: $nextPassage is not "none")[
+        (goto: $nextPassage)
+      ]
+      (else:)[
+        (replace: ?hintNode)[]
+        (set: $canNext to false)
+        (set: $isTyping to false)
+        (set: $clickLock to false)
+        (replace: ?timer)[]
+        (show: ?choices)
+      ]
+    ]
+  ]
+]
+}
+
+
+:: Door 3 [en Scene7.5] {"position":"6800,900","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We stepped through the third door.",
+  "After what felt like a long time, we began to hear familiar sounds once again.",
+  "We had finally returned to the real world."
+))
+
+(set: $names to (a: "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+(if: $sanity >= 70)[(button:)[[Ending 1]]]
+(else-if: $sanity >= 40)[(button:)[[Ending 2]]]
+(else:)[(button:)[[Ending 3]]]
+
+<audio src="https://cdn.freesound.org/previews/731/731716_15403889-lq.mp3
+" autoplay>
+]
+
+
+:: Dusk at the Gates [en Scene1] {"position":"225,500","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "As dusk approached, I entered the park and walked through a long corridor adorned with flags depicting the park’s characters, accompanied by an upbeat yet oddly distorted tune—rather peculiar.",
+  "Beside the corridor was a vast parking lot, darkened for some reason, leaving only a faint beam of light in the distance, adding an eerie ambiance to the bustling park. I hurried past that unsettling area."
+))
+(set: $names to (a: "", ""))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "The Drifter’s Warning")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/414/414490_6417448-lq.mp3
+" autoplay>
+}
+
+
+:: Ending 1 [en end] {"position":"7000,775","size":"100,100"}
+{<!-- ENDING 1: DEFEAT OUTCOME
+     Unlocked when: Player escapes BUT has low sanity (<60%)
+     Outcome: Becomes complicit in the cycle of injustice
+     Themes: Apathy, moral weakness, conformity
+     Player becomes part of the machine -->
+//The Grand Finale: Ending 1//}
+{
+(set: $dialogs to (a: 
+  "I kept the SCP insignia I found inside the amusement park— the last trace of Mark.",
+  "When news of the disappearances finally broke, the entire country was shaken. Within hours, the SCP Foundation sealed off the park completely, turning it into a forbidden zone under strict containment.",
+  "But even after escaping that nightmare, the world outside felt no different.",
+  "Online, cruelty still spread unchecked. Mockery. Judgment. Harassment. People tearing each other apart for sport.",
+  "And I couldn’t forget what I saw inside the park. Those creatures—those “monsters”— behind their blood‑stained eyes were years of pain, resentment, and suffering no one had ever cared to see.",
+  "I used to be one of the silent ones. One of the people who looked away.",
+  "But now I understand:",
+  "Silence is agreement. Silence is complicity. Silence is telling every victim of cruelty, “You deserved it.”",
+  "Maybe I can’t change the world. Maybe I can’t save anyone.",
+  "But this time— I refuse to stay silent."
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/731/731716_15403889-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[(link: "Restart")[(restart:)]]
+]
+
+(display: "Styles")
+
+
+:: Ending 2 [en end] {"position":"7000,900","size":"100,100"}
+{<!-- ENDING 2: DEFEAT OUTCOME
+     Unlocked when: Player escapes BUT has low sanity (<60%)
+     Outcome: Becomes complicit in the cycle of injustice
+     Themes: Apathy, moral weakness, conformity
+     Player becomes part of the machine -->
+//The Grand Finale: Ending 2//
+(set: $dialogs to (a: 
+  "The world kept turning.",
+  "The hateful comments kept multiplying. Victims trapped in endless waves of cyberbullying continued to endure the attacks.",
+  "Tomorrow, there would be new victims. The day after, more. There would always be more.",
+  "And I did nothing.",
+  "I lay on my bed and closed my eyes.",
+  "In the darkness of my dreams, the child from the maze stared at me. No blame. No anger. Just a quiet, steady gaze.",
+  "As if asking: “You know the truth now… so why are you still doing nothing?”",
+  "I had no answer.",
+  "I turned over, pulling the blanket over my head, pretending sleep could hide me from the question. Pretending ignorance could absolve me.",
+  "I still didn’t reach out to help anyone. I was still afraid— afraid of losing my audience, afraid of being attacked, afraid of standing alone against the crowd, afraid of being branded a freak for speaking up.",
+  "And so, I remained silent."
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/731/731716_15403889-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[(link: "Restart")[(restart:)]]
+]
+
+
+:: Ending 3 [en end] {"position":"7000,1025","size":"100,100"}
+{
+//The Grand Finale: Ending 3//
+(set: $sanity to 0)
+(set: $dialogs to (a: 
+  "The moment we stepped toward the exit, a sharp, tearing pain ripped through our bodies.",
+  "Our vision blurred.",
+  "Our thoughts dissolved.",
+  "Piece by piece, our minds slipped away, swallowed by the illusion.",
+  "In the end, we dissolved, endlessly, into the park’s unending dreamscape...",
+  "|shake>[Cause of death: Sanity insufficient. Fall for The illusion's trick.]"
+))
+
+(set: $names to (a: "", "", "", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/731/731716_15403889-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[(link: "Restart")[(restart:)]]
+]
+
+
+:: Enforcement by Blood [en Scene2.3] {"position":"1600,500","size":"100,100"}
+{
+<!-- SCENE 2.3: FIRST ENCOUNTER WITH MONSTER
+     Creatures begin slaughtering rule-breakers
+     Player must choose: hide or flee -->
+(set: $dialogs to (a: 
+  "A blood-curdling shriek ripped through the darkness. In the dim light, I saw a staff member in a red uniform—his hand, now a jagged claw, had gutted a man holding a professional camera. Fresh blood began to seep from the jagged wound. The staffer’s face was a twisted, contorted mask of flesh, utterly inhuman.",
+  'Panic erupted. Some tried to call for help, only to find the lines dead. Others, driven by a morbid, stunned reflex, actually held up their phones to record. As more rules were broken, more of these "alternates" emerged from the shadows. Violators were slaughtered on the spot.',
+  "|imp>[Enjoy the show.]",
+  "|imp>[Help me—!]",
+  "A young man nearby screamed, breaking the silence rule. In an instant, his upper body was severed from his waist, collapsing at my feet. A spray of warm, metallic blood drenched my clothes.",
+  "(My mind went completely numb. The stench of iron filled the air.)",
+  "Suddenly, the creature turned toward me.",
+  "|imp>[Photography is strictly prohibited inside the venue.]",
+  '((text-style:"shudder")[It hissed, its distorted face inching closer.])',
+  "What will you do?"
+))
+(set: $names to (a: "", "", "Host", "???", "", "", "", "Staff","", ""))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "none")
+(set: $audioTriggerStep to 4)
+(set: $audioUrl to "https://cdn.freesound.org/previews/547/547964_6229882-lq.mp3")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+  (button:)[[Stand your ground, too terrified to move]]
+  (button:)[[Immediately scramble back a few steps]]
+]
+
+
+:: Footer [footer] {"position":"250,50","size":"100,100"}
+{
+(display:"Sidebar")
+(display:"PopupComponent")
+}
+
+
+:: Head for the Maze to hide [en Scene3.1] {"position":"1825,750","size":"100,100"}
+{
+<!-- CHOICE B: Seek shelter in maze
+     If player chooses to hide
+     Introduces the maze location and first allies -->
+(set: $hasUpdatedRules to true)
+(set: $dialogs to (a: 
+  "We trudged all the way to the entrance of the maze. After making sure it was safe inside, we slipped into a corner and hid—",
+  "I remembered the rules: |shake>[out there is not safe right now.]",
+  "Fu*k! What the hell is going on out there? And what’s with these stupid fucking rules?",
+  "I don’t know... but one thing’s for sure—this is no ordinary place. The only thing I do know is this: if we break their rules, we’ll see each other in hell, just like we promised.",
+  "Spit it out! Are you trying to get us killed talking like that?",
+  "Weren’t we already asking for death the moment we stepped in here?",
+  "Uh… come to think of it, why are there even these rules? It’s so strange.",
+  "He asked the very question that had been burning at the back of my mind.",
+  "|shake>[Who are “they,” really?]",
+  "I gazed across our surroundings. The maze wasn’t just a tangle of branching paths—it was filled with small rooms in between.",
+  "(I remembered I read reviews on this maze. Visitors are told to use hints hidden in these rooms to navigate a story, piecing clues together to find the exit.)",
+  "(It was similar with the 'escape rooms' trending these days.  drawing and attracting crowds of curious players.)",
+  "(However, the maze in front of me had something off from all those visitor reviews.)",
+  "The maze was cloaked in a strange, thin mist fog that blurs all the path ahead. Making us pretty much impossible to see where the corridor ended.",
+  "Suddenly, a voice drifted out from the far end of the hallway.",
+  "|shake>[“Over here—”]",
+  "It was a woman’s voice, thin and muffled, as if spoken through a heavy curtain.",
+  "The rhythm was wrong—each word spaced too far apart, like the speaker wasn’t entirely familiar with human language.",
+  "|shake>[“Come closer—”]",
+  "The voice shifted.Now it was a child, trembling, on the verge of crying, the words wet and slurred.",
+  "|shake>[“We’re all waiting for you—”]",
+  "Another change. A man this time, chuckling under his breath, as if sharing a secret only he found amusing.",
+  "All from the same direction, yet each voice belonged to someone different. The transitions came without warning, echoing through the pitch‑black corridor like someone whispering into an empty tin can right beside your ear.",
+  "Samuel, terrified beyond reason, was already gripping my hand, ready to take a step toward the voices.",
+  "At this moment, I would—"
+))
+
+
+(set: $names to (a: "", "", "Samuel", "Me", "Samuel", "Me", "Samuel", "", "Samuel", "", "", "", "", "", "", "", "","","","","","","","",""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/193/193818_2000738-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Close my eyes to drive away the hallucinations->page15.B]]
+(button:)[[Follow the Voice Forward->Bad Ending 3]]
+]
+
+
+:: Hollow Smiles and a Brochure [en Scene1.6] {"position":"850,500","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "The queue was long. It took us nearly twenty minutes to finally reach the entrance. There, the staff stood with identical, mechanical smiles plastered across their faces.",
+  "Their professionalism was admirable, yet there was an eerie perfection to it—something I couldn't quite place.",
+  "Welcome to the park. Have a pleasant day.",
+  "The man in front of us said, his voice as hollow as a recording.",
+  "He handed each of us a brochure. I flipped through it, but it was just a collection of mundane safety rules.",
+  "(On the surface, it seemed utterly unremarkable.)"
+))
+(set: $names to (a: "", "", "Staff", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $popupImg to "https://i.imgur.com/xjMiha8.png")
+(set: $popupTarget to "Rules of the Crimson Tent")
+(set: $nextPassage to "none")
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+  (button:)[(link: "[ RULES FOR THE CIRCUS SHOW ]")[(show: ?PopupWindow)]]
+]
+
+
+:: Immediately scramble back a few steps [en Scene3] {"position":"1725,600","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  'What are you doing? We have to go!',
+  'Samuel barked, lunging forward to grab my arm. He pulled me into a dead sprint toward the exit. Behind us, the staff members stopped their pursuit, watching us with those twisted, frozen expressions.',
+  'I tripped and hit the ground hard near the gate.',
+  'Holy sh*t, you scared the crap out of me!',
+  'Samuel gasped, breathless.',
+  'What the hell is going on?',
+  "Are you okay? You’ve been acting strange since we got here.",
+  "(I didn't answer. My eyes were fixed on the brochure I’d dropped. The ink had changed. The once-boring safety tips were gone, replaced by words written in a violent, bleeding crimson.)",
+  'More rules...',
+  'I muttered. (I knew this place was off, but I never expected a massacre.)',
+  'Samuel looked over my shoulder, his face turning pale.',
+  "What kind of sick joke is this? 'Worst possible treatment'?",
+  '(I scanned our surroundings. In the distance, a group of those red-uniformed silhouettes was drifting toward us. I checked the map in the brochure.)',
+  "We aren't safe here. We need to move, now!",
+))
+(set: $step to 1)
+(set: $names to (a: "Samuel", "", "", "Samuel", "", "Samuel", "Samuel", "", "Me", "", "", "Samuel", "", "Me"))
+(set: $msgName to $names's ($step))
+(set: $popupImg to "https://i.imgur.com/EmxxNKx.png")
+(set: $popupTarget to "") 
+(set: $popupTriggerStep to 9)
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/166/166125_2104797-lq.mp3
+" autoplay>
+}
+
+|choices)[
+  (button:)[[Head for the Maze to hide]]
+]
+
+
+:: Laughter and Lions [en Scene2.1] {"position":"1350,500","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "The show began as a clown clad in a vibrant costume stepped onto the stage, juggling colorful balls with effortless skill. His routine was fluid, cleverly punctuated by deliberate mishaps that had the children shrieking with laughter.",
+  "Next, the beast tamer appeared with a pride of large felines—lions, by the look of them, boasting golden coats and formidable builds. At the crack of a whip or a simple command, they executed a series of stunts: leaping through iron hoops, diving through rings of fire, and balancing on their hind legs.",
+  "The crowd erupted in thunderous applause, the energy inside the tent soaring to a fever pitch. Just like that, the two-hour spectacle drew toward its conclusion."
+))
+(set: $names to (a: "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "Lights Out")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: Lights Out [en Scene2.2] {"position":"1475,500","size":"100,100"}
+{
+<!-- SCENE 2.2: BLACKOUT & CREATURES EMERGE
+     Sudden darkness triggers the monsters
+     This is the point of no return - rules become deadly -->
+(set: $sanity to it - 8)  <!-- High stress event reduces sanity -->
+(set: $dialogs to (a: 
+  "|highlight>[BOOM! ](set: $sanity to it - 8)",
+  "All in a sudden, the lights snapped off.",
+  "No warning, no flicker, just sudden, absolute darkness, as though someone ripped the plug from the wall, plunging the entire venue into an abyss.",
+  "A crowd of nearly five hundred was left reeling in the dark. The air filled with the sharp wails of terrified children, the muffled curses of adults, and the chaotic scuffling of those trying to flee.",
+  "Ten minutes of suffocating darkness passed.",
+  "Then, a voice crackled through the silence. Cold. Precise.",
+  "Let the show... |imp>[BEGIN!]"
+))
+(set: $names to (a: "", "", "", "", "", "", "Host"))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "Enforcement by Blood")
+(set: $audioTriggerStep to 4)
+(set: $audioUrl to "https://cdn.freesound.org/previews/267/267250_5052946-lq.mp3")
+(display: "DialogBox")
+(display: "Styles")
+
+<audio id="audio1" src="https://cdn.freesound.org/previews/494/494983_6687700-lq.mp3" autoplay>
+}
+
+
+:: PopupComponent {"position":"400,175","size":"100,100"}
+{
+<!-- MODAL POPUP COMPONENT
+     Displays large images/important information in overlay
+     Used for: Rules brochure, plot revelations
+     Can be closed with X button
+     Variables: $popupImg (image URL), $popupTarget (next passage) -->|PopupWindow)[
+  <div class="popup-overlay">
+    <div class="popup-content">
+      <div class="close-btn">
+        (link: "X")[
+          (hide: ?PopupWindow)
+          (if: $popupTarget is not "")[(go-to: $popupTarget)]
+        ]
+      </div>
+      (print: "<img src='" + $popupImg + "'>")
+    </div>
+  </div>
+]}
+
+
+:: Pretend everything is fine [en Scene1.7] {"position":"1100,550","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "I’m fine.",
+  'I replied quickly, trying to steady my voice.',
+  '(Was I really that rattled by the drifter earlier?)',
+  'Maybe I’m just feeling a bit under the weather today.',
+  'Samuel gave a noncommittal grunt.',
+  '(He didn’t press any further, his attention already drifting back to the crimson tent.)'
+))
+(set: $step to 1)
+(set: $names to (a: "Me", "", "", "Me", "", ""))
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "The Show Begins")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+<!-- ENDING FLAG: Pretend everything is fine path - Ending-1 trajectory -->
+
+
+:: Response [en Scene1.3] {"position":"475,450","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "I gave my wrists a hard tug. Seeing I couldn't break free, I sighed and looked down at him.",
+   "Get up first. What exactly did you mean by... they?",
+   "The homeless man stammered, his eyes wide with terror.",
+   "|shake>[Those rules... they're real... Don't break them... Don't...]",
+   "With that, he spun around and bolted."
+))
+(set: $step to 1)
+(set: $names to (a: "", "Me", "", "???", ""))
+(set: $msgName to $names's ($step))
+(set: $hasDrifterWarning to true)
+(set: $nextPassage to "Reunion with Samuel")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/414/414490_6417448-lq.mp3
+" autoplay>}
+
+
+:: Reunion with Samuel [en Scene1.5] {"position":"600,500","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  '(Someone startling me with (text-style:"blink")[a pat on the shoulder suddenly.])',
+  'Whoa! You scared me! Samuel!',
+  "(Yes, that's my college friend, Samuel. We've been through a lot together.)", 
+  'What are you doing here?',
+  'I’ve seen a lot of people visiting this place recently. (text-style:"bold")[My friend told me that the circus show is the most brilliant one he had ever seen.] Therefore, I am here to watch it. And you?',
+  "This park has become so popular lately; of course, I had to ride the wave of popularity. That I've heard some visitors are completely obsessed, going three or four times a week—that seems exaggerated.",
+  'Three or four times? Who goes to the same park multiple times? Crazy!',
+  'By the way, who was that person earlier?'
+))
+(set: $step to 1)
+(set: $names to (a: "", "Me", "", "Me", "Samuel", "Me", "Samuel", "Samuel", "Samuel"))
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+  (button:)[(link: "Tell Samuel the truth")[(set: $isHonestAboutDrifter to true)(go-to: "SamuelTalks")]]
+  (button:)[(link: "Just a weirdo")[(set: $isHonestAboutDrifter to false)(go-to: "SamuelTalks")]]
+]
+
+
+:: Rules of the Crimson Tent [en Scene1.6] {"position":"975,500","size":"100,100"}
+{
+(set: $hasRulesBrochure to true)
+(set: $dialogs to (a: 
+  'We arrived at the main gate of the circus and joined the queue. The tent was a striking shade of crimson; with the upbeat music and the constant hum of chatter.',
+  '(The place felt lively—on the surface, at least.)',
+  '((text-style:"shudder")[Dealt with.] What kind of place uses a word like that?)',
+  'I stared at that final line, a sudden shiver involuntary (text-style:"shudder")[rippling through my body].',
+  'It was all too bizarre. First that terrified drifter, and now this unsettling atmosphere. My suspicious nature began to kick in. (I haven’t stumbled into a horror novel, have I?)',
+  'Samuel noticed my hesitation and tried to comfort me.',
+  "Are you okay? You’ve been acting strange since we got here.",
+  'What will you do?'
+))
+(set: $step to 1)
+(set: $names to (a: "", "", "", "", "", "", "Samuel", ""))
+(set: $msgName to $names's 1)
+(set: $nextPassage to "none")
+(set: $popupTriggerStep to 0)
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+  (button:)[[Pretend everything is fine]]
+  (button:)[[Tell him about the strange atmosphere]]
+]
+
+
+:: SamuelTalks [en Scene1.5] {"position":"725,500","size":"100,100"}
+{
+(if: $isHonestAboutDrifter)[
+    (set: $currentLine to "Don't know, He just popped up in front of me out of nowhere and kept rambling on and on... |shake>[It's kind of weird.]")
+]
+(else:)[
+    (set: $currentLine to '(text-style:"sway")[Let him be, is just a weirdo.]')
+]
+
+(set: $dialogs to (a: 
+  $currentLine,
+  "Seeing that Samuel and I were attending the same circus performance, I suggested,",
+  "You’re watching this show too? Let’s head in together!"
+))
+
+(set: $names to (a: "Me", "", "Me"))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "Hollow Smiles and a Brochure")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: Sidebar [sidebar] {"position":"400,50","size":"100,100"}
+{
+<!-- PERSISTENT SIDEBAR - Always visible on right side
+     Displays: Player status, sanity meter, inventory
+     Sanity changes color based on danger level
+     Updates in real-time as story progresses -->(append: ?Sidebar)[
+$statusText[STATUS]
+<br>
+$sanityText[SANITY]
+(if: $sanity <= 30)[<script>$('span').addClass('danger');</script>]\
+(else:)[<script>$('span').addClass('healthy');</script>]
+<span id="sanity-val">$sanityNumText[$sanity%]</span>
+
+<div class="sanity-bar-bg">
+  <div class="sanity-bar-fill" id="sanity-fill"></div>
+</div>
+<script>
+  setTimeout(function() {
+    var textEl = document.getElementById('sanity-val');
+    if (textEl) {
+      var val = parseInt(textEl.innerText);
+      window.updateSanityBar(val);
+    }
+  }, 100);
+</script>
+
+<hr>
+$invText[INVENTORY]
+(if: $hasRulesBrochure or $hasUpdatedRules or $hasDrifterWarning)[
+  (if: $hasRulesBrochure)[
+    (link: "Rules Brochure")[
+      (set: $popupImg to "https://i.imgur.com/xjMiha8.png")
+      (show: ?PopupWindow)
+    ]
+    <br>
+  ]
+  (if: $hasUpdatedRules)[
+    (link: "Updated Rules")[
+      (set: $popupImg to "https://i.imgur.com/EmxxNKx.png")
+      (show: ?PopupWindow)
+    ]
+    <br>
+  ]
+  (if: $hasDrifterWarning)[
+    (link: "Drifter's Warning")[
+      (set: $popupImg to "https://i.imgur.com/evSo7Sf.png")
+      (show: ?PopupWindow)
+    ]
+  ]
+]
+(else:)[
+  $itemText[Empty]
+]
+<br>
+$footerText[Maintain your composure.]
+]
+}
+
+
+:: Stand your ground, too terrified to move [en end Scene2.4] {"position":"1725,325","size":"100,100"}
+{(set: $sanity to it -8)
+(set: $dialogs to (a: 
+  "I stood rooted to the spot, not daring to flinch. The rule was clear: |imp>[Do not leave without instruction.] (I clung to that sentence like a lifeline, quickly shoving my phone into my pocket. My entire body shook as I stared into the contorted, hideous face of the creature before me.)",
+  "The staff member tilted its head, its voice a sickening, dry rasp.",
+  "|imp>[So obedient,]",
+  "it hissed. ",
+  "|imp>[And yet... you are still too late.]",
+  "(Before I could even gasp, its jagged, inhuman claw lunged forward. It didn't just stab me; it skewered my chest. A dull, cold shock radiated from the wound, followed by a searing heat that consumed my lungs.)",
+  "I looked down, watching my own blood drench the very rules I had tried so hard to follow. (Darkness began to cloud my vision, and as my heart gave its final, frantic thud, I realized the cruelest truth of this park:)",
+  "(text-style:'shudder')|imp>[In here, the rules weren't meant to save you. They were only meant to keep you still long enough for the slaughter.]",
+  "|shake>[Cause of death: Obedience exploited — slaughter by staff.]",
+))
+(set: $names to (a: "", "", "Staff", "", "Staff", "", "", "", "THE END"))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "none")
+(set: $audioTriggerStep to 8)
+(set: $audioUrl to "https://cdn.freesound.org/previews/584/584318_12865053-lq.mp3")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/713/713696_10403690-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->Enforcement by Blood]]
+]
+
+
+:: Start [en] {"position":"100,500","size":"100,100"}
+{
+<!-- ============================================
+     OPENING PASSAGE - GAME START
+     Introduces the protagonist's journey to the
+     mysterious amusement park
+     ============================================ -->
+(set: $dialogs to (a: 
+  'Recently, a newly opened theme park has seen an astonishing influx of visitors, as if everyone were irresistibly drawn to it.',
+  'Particularly captivating is the |highlight>[circus performance] at the |imp>["Dreamland Circus,"] which has just recently opened.',
+  'Word has it that some guests visit three to four times a week, which seems quite exaggerated.',
+  'As a content creator, I booked tickets to the circus. Due to the crowd, the only remaining options were at night.'
+))
+(set: $names to (a: "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's 1)
+(set: $nextPassage to "Dusk at the Gates")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: Startup [startup] {"position":"100,50","size":"100,100"}
+{
+<!-- ============================================
+     INITIALIZATION PASSAGE
+     Sets up all game variables, tracking flags,
+     and styling that persist throughout gameplay
+     ============================================ -->
+
+<!-- PLAYER STATUS & STATS -->
+(set: $sanity to 100)
+(set: $currentStatus to "Calm")
+(set: $inventory to (a:))
+(set: $hasRulesBrochure to false)
+(set: $hasUpdatedRules to false)
+(set: $hasDrifterWarning to false)
+
+<!-- STORY BRANCH FLAGS - Track major decisions that affect gameplay outcomes -->
+(set: $drifterHint to false)              <!-- Did player listen to the drifter? -->
+(set: $friendMurder to false)             <!-- Did player push away the drifter? -->
+(set: $isAskingAboutFriend to false)      <!-- Did player ask staff about escape? -->
+(set: $isHonestAboutDrifter to false)     <!-- Did player tell Samuel the truth about drifter? -->
+(set: $isHonestAboutStaff to false)       <!-- Player's trust level with staff -->
+(set: $trustsAstor to false)              <!-- Does player trust Astor? -->
+(set: $hasSeenColorRule to false)         <!-- Has player discovered the color-based rule system? -->
+
+<!-- UI STYLING - Text color, size, and effects for displaying information -->
+(set: $statusText to (text-color:#909090)+(font:"Bebas Neue"))
+(set: $sanityText to (text-style:"expand")+(text-style:"subscript"))
+(set: $sanityNumText to (text-size:2))
+(set: $invText to (text-style:"expand")+(text-style:"subscript"))
+(set: $itemText to (text-color:#666))
+(set: $footerText to (text-color:#444)+(text-size:0.5))
+(set: $type to (char-style: via (t8n-delay: pos * 30) + (t8n: "instant")))
+(set: $samStart to '<div class="msg-box"><div class="msg-name">Samuel</div><div class="msg-content">')
+(set: $msgEnd to '</div></div>')
+(set: $textTriggerStep to 0)
+(set: $popupTriggerStep to 0)
+(set: $letterTriggerStep to 0)
+(set: $audioTriggerStep to 0)
+(set: $popupImg to "")
+(set: $popupTarget to "")
+(set: $letter to true)
+}
+
+
+:: Styles {"position":"100,175","size":"100,100"}
+{
+<!-- STYLING COMPONENT
+     Applies visual effects to tagged text:
+     - link: Red color, hover effects
+     - highlight: Red emphasized text
+     - imp: Important/ominous text (red, blinking, shudder)
+     - shake: Red text with rumble effect -->
+(enchant: ?link, (text-color:#d4183d)+(hover-style:(text-style:"tall","condense","shudder")))
+
+(enchant:?highlight, (text-color:#d4183d)+(hover-style:(text-color:red)+(text-style:"tall","condense")+(text-size:1.2)))
+
+(enchant:?imp, (text-color:#d4183d)+(text-style:"blurrier","blink")+(hover-style:(text-color:red)+(text-style:"smear","tall","fidget","expand")+(font: "Walktrought")))
+
+(enchant: ?shake, (text-color:red)+(text-style:"bold","rumble"))
+
+(enchant: ?letter, (text-color:red)+(text-style:"bold","rumble")+(font: "Walktrought")+(css: "text-transform: uppercase;"))
+
+}
+
+
+:: Tell him about the strange atmosphere [en Scene1.7] {"position":"1100,425","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "I don’t know… don’t you feel something’s off here?",
+  'I whispered, glancing around.',
+  'Where?',
+  'Samuel asked, unbothered.',
+  'The whole atmosphere.',
+  'Did you notice the staff at the park gates?',
+  'Them?',
+  'Samuel chuckled.',
+  "What’s wrong with them? Other than the fact that they looked completely miserable while sprouting all that 'magical' nonsense? Honestly, they looked exactly like me when I'm clocked in at the office. Haha!",
+  "(I didn't push the subject further. Maybe I was just being paranoid.)"
+))
+(set: $step to 1)
+(set: $names to (a: "Me", "", "Samuel", "", "Me", "Me", "Samuel", "", "Samuel", ""))
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "The Show Begins")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+<!-- ENDING FLAG: Tell about strange atmosphere - Neutral impact -->
+
+
+:: The Drifter’s Warning [en Scene1.2] {"position":"350,500","size":"100,100"}
+{
+<!-- SCENE 1.2: FIRST WARNING
+     Protagonist encounters a mysterious drifter with cryptic warnings
+     This moment is crucial - sets the tone for danger ahead -->
+(set: $dialogs to (a: 
+  'All in a sudden, the homeless man grabbed my hand with huge strength, stared at me looking hopeless and panic. He whispered in a spooky tone.',
+  '|shake>[They’re coming... no one can escape…not even a single one...]'
+))
+(set: $step to 1)
+(set: $names to (a: "", "???"))
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/341/341670_5612688-lq.mp3
+" autoplay>
+}
+
+|choices)[
+  (button:)[(link: "Talk to him")[(set: $drifterHint to true)(set: $friendMurder to false)(go-to: "Response")]]
+  (button:)[(link: "Push him out of my way")[(set: $drifterHint to false)(set: $friendMurder to true)(go-to: "Chase away")]]
+]
+
+
+:: The Show Begins [en Scene2] {"position":"1225,500","size":"100,100"}
+{
+<!-- SCENE 2: CIRCUS BEGINS
+     The performance starts - protagonist captures the show on camera
+     First rule violation (photography) -->
+(set: $dialogs to (a: 
+  'We slipped into our seats, the tent buzzing with anticipation.',
+  'Though the rules clearly forbade filming, I couldn’t resist. I slid my camera into a barely noticeable spot, its lens peeking out just enough. (Truth be told, no one seemed to care—plenty of visitors were snapping photos, chatting loudly, breaking every rule printed in that brochure.)
+',
+"The lights dimmed. A sudden burst of music filled the air, and the host’s voice thundered across the stage, pulling the atmosphere taut like a drumskin.",
+"Ladies and gentlemen, welcome to the most spectacular show in the land...",
+"His words rolled with theatrical grandeur, each syllable designed to electrify the crowd.",
+"And now, let’s give a big round of applause to our performers today!",
+"The audience erupted, clapping and cheering with a feverish energy."
+))
+(set: $step to 1)
+(set: $names to (a: "", "", "", "Host", "", "Host", ""))
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "Laughter and Lions")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page 19.B [en Scene3.6] {"position":"2350,775","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Clara finally broke the silence.",
+  "Whoever he is, he survived—and he left these markers for us. That’s enough.",
+  "She pointed at the faint red arrow on the wall.",
+  "Out there is definitely more dangerous than in here. If these marks lead somewhere safe, we should follow them.",
+  "She wasn’t wrong. At this point, trusting Mark’s route was the only chance we had."
+))
+
+(set: $names to (a: "", "Clara", "", "Clara", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page20.B")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page 25.B [en Scene5.1] {"position":"3025,975","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Seeing all this, something stirred in my memory— back when I studied media, there had been a similar case in the news. And now, after reading the whole story, I couldn’t shake the heaviness in my chest.",
+  "So… what do we do now?",
+  "That looks like the exit of the maze. Let’s go check it out.",
+  "We returned to the Door of Choice.",
+  "Two doors stood before us. From the cracks, faint sounds leaked through:",
+  "The left door carried the rhythm of synchronized footsteps, applause, a crowd moving in perfect unison.",
+  "The right door whispered with lonely wind, fragmented murmurs, and a quiet that felt almost human.",
+  "We would choose:"
+))
+
+(set: $names to (a: "", "Astor", "Clara", "", "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+(button:)[[Left Door ->Bad Ending 6.1]]
+(button:)[[Right Door ->page26.B]]
+]
+
+
+:: page.28.A [en Scene6.2] {"position":"3650,925","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "A horrifying amusement‑park mascot stepped into view—its face torn, yet frozen in a stiff, mechanical grin. Samuel and Clara screamed.",
+  "The doll tilted her head, voice soft and almost tender.",
+  "Are you… afraid of me?",
+  "Then came a sound caught between twisted laughter and a breakdown. She reached toward us, fingers curling as if ready to snap our necks.",
+  "Astor grabbed my arm.",
+  "Run!",
+  "We bolted, sprinting back toward the circus path. But the doll chased us without slowing—relentless, echoing footsteps behind us.",
+  "When we reached the area beside the circus tent, our hearts dropped. We had run straight into a dead end. Only the towering amusement‑park walls surrounded us."
+))
+
+(set: $names to (a: "", "", "Mabel", "", "", "Astor", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page29.A")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page.30.A.1 [en Scene7] {"position":"4150,700","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "No! We were just trying to get out of the park!",
+  "Mabel stopped—then burst into shrill, mocking laughter.",
+  "Foolish humans… hahaha! Did you really think you could escape?",
+  "With that, she turned away and slowly walked off, her footsteps scraping against the ground.",
+  "The moment her figure disappeared into the shadows, we sprinted toward the staff's office, desperate for any place to hide.",
+  "Samuel let out a shaky breath, his voice barely holding together.",
+  "Thank god… we’re alive", 
+  "He murmured, and for a moment, we all felt the same fragile relief."
+))
+
+(set: $names to (a: "Me", "", "Mabel", "", "", "","Samuel", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page31")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page.30.A.2 [en Scene6.2] {"position":"4150,850","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We were too terrified to speak.",
+  "Mabel’s voice drifted toward us, soft and cruel.",
+  "So... silence means you did see my face, hmm?",
+  "We shook our heads frantically, eyes squeezed shut, denying it with every breath— but her cold claws were already brushing against our necks, ready to close in.",
+  "Despair swallowed us whole."
+))
+
+(set: $names to (a: "", "", "Mabel", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "Bad Ending 6")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page15.B [en Scene3.3] {"position":"1975,775","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "//The bloodstains at the doorway brought me an unease I couldn't shake.// I stood behind Samuel as he pushed the door open.",
+  "A faint light flickered on at the back of the room, revealing two figures curled in the corner. Both were smeared with dried blood, staring at us in shock.",
+  "The door behind us shut on its own, clicking like a trap resetting. No turning back now.",
+  "Hi… I’m Clara",
+  "I am Astor",
+  "Finally, real people.",
+  "The moment we stepped inside, (the door shut behind us with a loud bang). It is one of the maze's cruel tricks—once one has chosen his own paths, there will be no turning back for him. |highlight>[Every step is a gamble.]",
+  "Do you two know what's happening?",
+  "We have no idea.",
+  "We ran straight here when we saw those… ''things''. Everything was fine just a few days ago and now there are monsters and crazy shit I never thought that actually exist.",
+  "Have you been here before?",
+  "My friend—he’s a VIP here—brought us often. He was supposed to meet us, but then he just… vanished.",
+  "//My mind got flooded with so many questions—so many question marks in my mind that I barely knew where to start. Before I could keep on asking, Samuel cut in.//",
+  "Hey, there’s a letter here!",
+  "A nearly invisible sheet of paper lay on the desk—easy to miss unless you were looking for it."
+))
+
+(set: $names to (a: "", "", "", "Clara", "Astor", "Samuel", "", "Me", "Clara", "Astor", "Me", "Astor", "", "Samuel", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+(button:)[[Read->page17.A]] 
+(button:)[[Don't Read->page17.B]]
+]
+
+
+:: page17.A [variable en Scene3.4] {"position":"2100,775","size":"100,100"}
+{
+(set: $letter to true)
+(set: $sanity to $sanity + 10)
+
+(set: $dialogs to (a: 
+  "We unfolded the note. The handwriting was rushed, almost shaking.",
+  "//I’ve never seen monsters this strong—especially the “Hallucinations.” They’re obsessed with the rules. Anyone who breaks one is killed. I don’t know their motive, but they’ve realized my presence threatens their plan. We tourists are trapped in this rule‑bound world. These creatures are beyond anything our organization can handle. I need to gather intel and send it out before more people die. First, I have to survive. This maze belongs to the Hallucinations—one wrong choice and you die lost and confused. I’ve marked the paths I took. If anyone finds this, follow the signs. Stay alive. — Former SCP Field Agent, Mark Davis//",
+  "I felt a chill crawl up my spine.",
+))
+
+(set: $names to (a: "", "", "",))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page18.B.1")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page17.B [variable Scene3.6] {"position":"2350,975","size":"100,100"}
+{
+(set: $letter to false)
+(set: $dialogs to (a: 
+  "Hey, look! What’s that red arrow?",
+  "A faint red arrow was painted on the wall, pointing out of the room.",
+  "Strange… it wasn’t here when we came two days ago.",
+  "Should we follow it?",
+  "If this path leads to the exit, it’s safer than running into the monsters outside. And this route... it connects straight to the park’s main gate. We might actually escape."
+))
+
+(set: $names to (a: "Samuel", "", "Astor", "Samuel", "Clara"))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page20.B")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page18.B.1 [variable en Scene3.6] {"position":"2225,775","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "SCP… former field agent? What kind of organization is that? Sounds like some secret task force.",
+  "I didn’t answer right away. As a content creator, I had heard the name—stories online about the SCP Foundation, a secret group that contained anomalies. Most people treated it as fiction, internet lore. But standing in this maze, holding a note written with shaking urgency…",
+  "I’ve heard of it, My friend—the VIP member—mentioned it once. He said there are things in this world we’re not supposed to know. And SCP handles those things.",
+  "|shake>[Those things… you mean the monsters here?]",
+  "Silence settled over us."
+))
+
+(set: $names to (a: "Samuel", "", "Astor", "Samuel", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+
+(if: $letter is false)[(set: $nextPassage to "page 25.B")]
+(else:)[(set: $nextPassage to "page 19.B")]
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.pixabay.com/audio/2025/06/13/audio_e89334f3a8.mp3
+" autoplay>
+}
+
+
+:: page20.B [en Scene4] {"position":"2475,875","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We followed the others, still unsure, and stepped back into the maze. Endless corridors stretched in every direction.",
+  "Along the way, we saw more markings—likely the ones Mark had left behind. We followed them, and soon reached the next room.",
+  "It was small. Every wall, from floor to ceiling, was covered in sticky notes and scraps of paper. Layers upon layers—some yellowed and curling, some torn at the edges. Each note had a four‑digit number written on it, all in different handwriting: neat print, messy childlike scrawls, shaky elderly strokes. Red pen, pencil, marker—everything.",
+  "Samuel walked straight to the exit door and pushed. It didn’t budge.",
+  "Needs a code",
+  "I picked up a few notes at random. “1234.” “9999.” “2468.” “1357.” Each corner marked differently—smiley faces, crosses, check marks. Clearly written by different people."
+))
+
+(set: $names to (a: "", "", "", "", "Clara", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page21.B")
+
+(display: "DialogBox")
+(display: "Styles")
+
+(set: $Letter to false)
+<audio src="https://cdn.freesound.org/previews/393/393824_1931580-lq.mp3
+" autoplay>
+}
+
+
+:: page21.B [en Scene4.1] {"position":"2950,1275","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "There’s a tape recorder here.",
+  "An old cassette player sat on the floor, coated in dust, but its red indicator light was still glowing.",
+  "I pressed Play.",
+  "After a burst of static, a child’s voice drifted out—soft, thin, like he was talking to himself.",
+  "“They said… the answer is 4381. Because that’s Dad’s license plate.”",
+  "“They said… the answer is 2004. Because that’s the year my sister won her first award.”",
+  "“They said… the answer is 1111. Because ‘everyone uses that.’”",
+  "“They said… the answer is 0000. Because ‘blank is safest.’”",
+  "“They said… the answer is 5555. Because ‘five and five make ten, perfect ten.’”",
+  "A pause.",
+  "The static grew louder, like a radio tuned to nowhere. When the child spoke again, his voice was barely a whisper—fragile, almost afraid of the question itself.",
+  "“But… why do I have to listen to them?”",
+  "A long hiss of white noise.",
+  "The recording ended.",
+  "Silence swallowed the room."
+))
+
+(set: $names to (a: "Clara", "", "", "", "", "", "", "", "", "", "", "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page22.B")
+
+(display: "DialogBox")
+(display: "Styles")
+<audio src="https://cdn.freesound.org/previews/269/269703_2843367-lq.mp3
+" autoplay>
+}
+
+
+:: page22.B [variable Scene4] {"position":"2600,775","size":"100,100"}
+{
+(set: str-type $password to "")
+
+(set: $dialogs to (a: 
+  "So… the correct code isn’t any of these numbers?",
+  "Great. A damn puzzle. Exactly what I’m worst at.",
+  "We decided to search for more clues before trying the lock again.",
+  "We would first check:"
+))
+
+(set: $names to (a: "Samuel", "Samuel", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+(align:"=><=")[(bg:(hsl:0,0,0,0.85))[Enter the password we found:] (input: bind $password, "XXXX")
+(link: "(bg:(hsl:0,0,0,0.85))[Unlock]")[
+(if: $password is "0615")[(goto: "page23.B")]
+(else:)[(goto: "Bad Ending 5")]]
+]
+}
+|choices)[
+ (button:)[[Astor’s extracted recording notes ->page23.B.1]]
+ (button:)[[Sticky notes filled with four‑digit numbers->page23.B.3]]
+ (button:)[[Dust‑covered tape recorder->page23.B.4]]
+]
+
+
+
+:: page23.B [en Scene4] {"position":"2775,900","size":"100,100"}
+{
+(set: $sanity to $sanity + 10)
+
+(set: $dialogs to (a: 
+  "I tried using the barely noticeable model number on the tape recorder as the code.",
+  "The lock clicked open with a sharp \"click\" sound.",
+  "Everyone stared at me in disbelief.",
+  "How did you know?",
+  "It never appeared on any of the notes or recordings.",
+  "I swept my eyes across the wall.", 
+  "No one wrote 0615. No one suggested 0615. It’s the only number that didn’t come from someone else — it came from the machine itself.",
+  "At that moment, a faint voice leaked from the recorder:",
+  "I like June fifteenth… No one yelled at me that day.",
+  "Maybe… it was the child’s birthday",
+  "None of us spoke after that.",
+  "We decided to follow the markings and keep moving."
+))
+
+(set: $names to (a: "", "", "", "Astor", "Me", "", "Me", "", "Clara", "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page24.B")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page23.B.1 [en Scene4.2] {"position":"2775,525","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Astor handed us the numbers he had extracted.",
+  "Look—4381, 2004, 1111, 0000, 5555. These are all common combinations. But the kid in the recording said, ‘Why listen to them?’ So the code isn’t any of these?",
+  "Samuel crossed his arms.",
+  "Maybe he’s the type of kid who loves doing the opposite of what he’s told. Always rebellious.",
+  "Then maybe the real code is a rearrangement of these numbers— a new sequence formed by flipping their order?"
+))
+
+(set: $names to (a: "", "Astor", "", "Samuel", "Me"))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+ (button:)[[Sticky notes filled with four‑digit numbers ->page23.B.3]]
+ (button:)[[Dust‑covered tape recorder ->page23.B.4]]
+ (button:)[[Unlock ->page22.B]]
+]
+
+
+:: page23.B.3 [en Scene4.1] {"position":"2775,650","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "I flipped through a few of the scattered notes. They read: “1234,” “9999,” “2468,” “1357”…",
+  "(Most of them were written with ordinary black pens or pencils. Some had smiley faces, crosses, or check marks in the corners—clearly left by different people.)",
+  "(But a few stood out.)",
+  "(One note had “0319” written in thick red marker, the numbers bold and impossible to miss. No symbols in the corner—just an arrow pointing directly toward the door.)",
+  "(Another note read “3820”, written in elegant cursive on pale pink paper. It looked almost decorative among the yellowed scraps around it.)",
+  "(And in the very center of the wall, pinned like a warning, was a note written in blue highlighter: “4717” Beneath it, a small line of text: “The rarest combination.”)",
+  "Do you think these unusually eye‑catching numbers might be the answer?"
+))
+
+(set: $names to (a: "", "", "", "", "", "", "Clara"))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+(button:)[[Astor’s extracted recording notes ->page23.B.1]]
+(button:)[[Dust‑covered tape recorder->page23.B.4]]
+(button:)[[Unlock ->page22.B]]
+]
+
+
+:: page23.B.4 [en Scene4.1] {"position":"2775,775","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "I crouched down to inspect the tape recorder.",
+  "Nothing unusual on the front—just today’s date, March 23.",
+  "I checked the side, then flipped it over to look at the bottom.",
+  "There it was: an old, faded model label.",
+  "TCM‑0615.",
+  "That’s just a model number, not a code, ",
+  "He wasn’t wrong.",
+  "But something about it felt different—the digits were dull, almost worn away. If you didn’t look closely, you’d never notice them at all."
+))
+
+(set: $names to (a: "", "", "", "", "Me", "Astor", "Samuel", "Me"))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+|choices)[
+  (button:)[[Astor’s extracted recording notes ->page23.B.1]]
+  (button:)[[Sticky notes filled with four‑digit numbers->page23.B.3]]
+  (button:)[[Unlock ->page22.B]]
+]
+
+
+:: page24.B [en Scene5] {"position":"2900,900","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We followed the route markers. There were countless branching paths along the way. The maze walls were covered with slurs and insults:",
+  "|letter>[“Misfit,” “Weird,” “Difficult,” “Autistic,” “Reclusive,” “Pretentious,” “Weak,” “Trash,” “Useless,” “Unnecessary”… “You should reflect on yourself.”]",
+  "Each word felt heavier than the last.",
+  "Every intersection had a sign hanging above it: “This is the correct path.” “Everyone takes this way.” “You’ll regret choosing otherwise.” “This is what normal people do.”",
+  "But the arrows never pointed in just one direction.",
+  "Clara picked up a note identical to the ones from the first room. We leaned in to read it:",
+  "//He never fit in. While other children played loudly, he curled up in a corner, lost in his own imagination. He loved quiet. He didn’t want to obey orders.//",
+  "//To adults, that was an illness. His parents forced him to be “normal”—forced him to talk, to socialize, to smile. The more he resisted, the more disappointed they became. “Why can’t you be better?”//",
+  "//School was hell. He was labeled: freak, lunatic. No one wanted to sit with him. Teachers said, “Why do they only bully you? You should reflect on yourself.”//",
+  "//He never did anything wrong. He only wanted to be himself. But society didn’t allow that. Everyone pushed him: be lively, be normal, be like everyone else.//",
+  "//No one told him: it’s okay to be different. His world was torn apart, and in the end, he locked himself inside a maze with no exit.//",
+  "//And so, the child who loved to imagine… became the monster that creates illusions.//",
+  "Mark’s letter continued:",
+  "//Now that I’m here, I finally understand the Hallucination’s origin. The “he” in the story… could it be the Hallucination telling his own tale? They were always bound by rules. They hated rules. So they longed to punish the rule‑makers—dragging everyone into the same hell they lived in…//"
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", "", "", "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(if: $letter is false)[(set: $nextPassage to "page18.B.1")]
+(else:)[(set: $nextPassage to "page 25.B")]
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page26.B [en Scene6] {"position":"3200,1150","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "After opening the door, we finally reached the exit and stepped back onto the main street of the park. What shocked me was how completely it had changed— the place that had been a disaster moments ago, littered with corpses and soaked in blood, was now spotless. Every trace of chaos had vanished as if it had never existed.",
+  "What… what is this?",
+  "Samuel’s eyes widened, his voice trembling with disbelief. He rubbed his eyes hard, as if trying to force away a hallucination.",
+  "There were bodies everywhere. Blood everywhere. How can it all just be—gone?",
+  "None of us could respond. We could only stand there in silence, staring at the impossible scene before us."
+))
+
+(set: $names to (a: "", "Samuel", "", "Samuel", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page27")
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page27 [en Scene6.1] {"position":"3350,1000","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Just as we carefully stepped toward the park’s main street, a strange sound rose behind us.",
+  "A woman’s sobbing burst into our ears—mixed with the harsh crackle of electrical static, like a machine dying. And beneath it all, an eerie melody curled around us, looping, tightening.",
+  "I finally found you~",
+  "What is this? Those monsters?",
+  "Maybe… just an illusion",
+  "The sound crept closer—clearer, sharper, unavoidable. In that split second between life and death, we—"
+))
+
+(set: $names to (a: "", "", "???", "Samuel", "Astor", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Close our eyes immediately!->page27.A]]
+(button:)[[Run immediately!->page28.B.2]]
+]
+
+
+:: page27.A [en] {"position":"3525,925","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We shut our eyes, terrified, praying for the voices to leave. Fifty‑eight… fifty‑nine… sixty.",
+  "We kept them tightly closed as we counted the full minute. The sounds around us slowed, blurred, and sank into darkness— until everything finally went silent.",
+  "Only then did we cautiously open our eyes."
+))
+
+(set: $names to (a: "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page.28.A")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page28.B.2 [en Scene6.1] {"position":"3650,1075","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "I suddenly remembered the strange mascot mentioned in the rules.",
+  "Don’t turn around!",
+  "That’s Mabel!",
+  "Mabel? The mascot on the rules",
+  "Run!",
+  "Fighting back our fear, we forced ourselves not to look behind. We ran frantically, searching for an indoor place to hide, but the sound behind us never faded. We reached the door of the office next to the circus—only to find it stuck. We had no way out.",
+  "This door is jammed!",
+  "There’s no other indoor place left!",
+  "The sound drew closer and closer, filling us with growing despair. It crept slowly into our ears.",
+  "Why are you running?",
+  "A terrifying voice asked, mixed with a sobbing laugh. We held our breath, too scared to make a sound.",
+  "Now, we have to choose:"
+))
+
+(set: $names to (a: "", "Me", "Me", "Clara", "Me", "", "Samuel", "Astor", "", "???", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Run toward the distant circus->page29.B.2.1]]
+(button:)[[Burst the door open->page29.B.2.2]]
+]
+
+
+:: page29.A [en Scene6.2] {"position":"3975,850","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Hearing the eerie noises behind us growing louder, we ducked behind a massive tree, barely daring to breathe.",
+  "Her footsteps dragged across the ground as she approached—slow, deliberate.",
+  "Do you really think you can escape?",
+  "We squeezed our eyes shut, trembling.",
+  "Then her voice came again, closer than before.",
+  "Why did you run away?",
+  "Was it because you saw me?",
+  "Now we must choose:"
+))
+
+(set: $names to (a: "", "", "Mabel", "", "", "Mabel", "Mabel", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Lie to her->page.30.A.1]]
+(button:)[[Remain Silent->page.30.A.2]]
+]
+
+
+:: page29.B.1 [en Scene6.3] {"position":"3975,1075","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Just as Mabel was about to kill me, the homeless man shoved me aside and stood in front of me.",
+  "No...Don't...",
+  "My wife… died like this too...",
+  "Mabel laughed.",
+  "How unfortunate… are you really that afraid of me?",
+  "Then her claw pierced straight through his stomach. As blood spread across the floor, he forced out his final words.",
+  "Hm...Parking lot… circus back entrance… key… office…",
+  "Then he fell silent forever."
+))
+
+(set: $names to (a: "", "???", "???", "", "Mabel", "", "???", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page31")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page29.B.2.1 [en Scene6.2] {"position":"3800,950","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We ran all the way toward the circus, only to end up trapped in a dead end.",
+  "Mabel slowly cornered us, blocking the only way out.",
+  "Despair consumed us."
+))
+
+(set: $names to (a: "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(if: $drifterHint is true)[
+    (set: $nextPassage to "page29.B.1")
+]
+(else:)[
+    (set: $nextPassage to "Bad Ending 7")
+]
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page29.B.2.2 [en Scene6.2] {"position":"3800,1075","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We slammed our shoulders into the stuck door. Just as Mabel closed in on us, it burst open.",
+  "We rushed inside and locked it behind us.",
+  "Mabel pounded on the door—once, twice—then stopped. She glared at us through the gap, eyes cold and furious, before finally walking away.",
+  "Her twisted face was burned into our minds. We were terrified, barely holding back our screams and walk inside the office."
+))
+
+(set: $names to (a: "", "", "", ""))
+
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page31")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page31 [en Scene7] {"position":"4300,875","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "The inside of the office was a complete mess—papers scattered everywhere, chairs overturned.",
+  "Yet there wasn’t a single person in sight.",
+  "Gathering our courage, we stepped into one of the rooms.",
+  "It was the main staff office.",
+  "Stacks of thick documents were piled across the desks: work procedures, duty notes, shift schedules… all abandoned.",
+  "As you sifted through the papers, two items stood out.",
+  "You decided to examine them:"
+))
+
+(set: $names to (a: "", "", "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Letter->page32.A]]
+(button:)[[Theme Park Documents->page32.B]]
+]
+
+
+:: page32.A [en Scene7] {"position":"4550,825","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "The amusement park’s main gate had long been sealed shut—escaping through it was nearly impossible.",
+  "If the rules were truly meant to mislead us, then some of them were likely written by the illusions themselves…",
+  "to lure us into traps,",
+  "or to keep us away from the real exit.",
+  "One rule said: \"Do not approach strong lights.\"",
+  "But when we first entered the park, I remembered seeing a strange, blinding flash near the parking lot.",
+  "(What if that wasn’t danger?)",
+  "(What if that was the exit—)",
+  "(and they warned us away because they didn’t want us to reach it?)",
+  "While hiding and observing, I learned something else:",
+  "There’s an employee passage that leads directly to the parking lot.",
+  "Staff and security use it to transport equipment and do patrols.",
+  "If we can find it and avoid the guards, we might escape.",
+  "But both ends of the passage require a staff ID card.",
+  "Sometimes workers drop theirs.",
+  "If we search carefully, we might find one.",
+  "It’s now 3:40 AM.",
+  "The guards have already begun their patrols.",
+  "Our time is running out.",
+  "Samuel swallowed hard.",
+  "So… what do we do now…"
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Samuel"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Look for a staff ID card->page33.A]]
+(button:)[[Search for the passage directly->page33.C]]
+(button:)[[Go back->page31]]
+]
+
+
+:: page32.B [en Inventory Scene7] {"position":"4550,1000","size":"100,100"}
+{
+<div class="letter">
+(link-reveal: "''Dreamland Amusement Park — Night Security Patrol Protocol''")[<br>
+To maintain safety and order during nighttime hours, all security personnel must complete their patrol in the following sequence and clock in at each designated checkpoint using the E-card system: <br>
+0. Inspect all amusement facilities to ensure equipment is functioning normally.
+0. Inspect Park Avenue/Main Street, confirming the area remains clean and tidy. Any irregularities must be corrected immediately.
+0. Clock in at every checkpoint to record patrol efficiency."
+---
+Required Clock-In Route (in order): <br>
+Security Department → Park Facilities → Park Avenue/Main Street → Staff Office → Security Department <br>
+---
+Night Shift Schedule <br>
+Security personnel must conduct patrols during the following hours: <br>
+12:00–01:00 <br>
+03:00–04:00 <br>
+06:00–07:00 <br>
+] </div>
+(set: $dialogs to (a: 
+  "You find a Protocol"
+))
+
+(set: $names to (a: ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page31]]
+]
+
+
+:: page33.A [en Scene7] {"position":"4775,900","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We searched every corner of the office, hoping someone had accidentally left behind a staff ID card.",
+  "We can search:"
+))
+
+(set: $names to (a: "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Employee desks->page34.C]]
+(button:)[[File cabinets->page34.D]]
+(button:)[[Go to the Employee lounge->page34.A]]
+(button:)[[Go to prop storage room->page34.B]]
+]
+
+
+:: page33.C [en Scene7.1] {"position":"4775,675","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We’re running out of time. Let’s find the passage first.",
+  "We slipped out of the employee office floor, checked that the hallway was clear, and immediately searched the area for the entrance.",
+  "We looked everywhere, dodging staff members as we moved, but the passage was nowhere to be found.",
+  "Where the hell is it?!",
+  "Astor frowned.",
+  "A friend of mine said staff often move huge props from the parking lot. Maybe the passage is near wherever they store those props?",
+  "Clara nodded.",
+  "Mark said the passage is for transporting props… so if that’s true… the circus might be where it is.",
+  "We exchanged a quick look—",
+  "then sprinted toward the circus."
+))
+
+(set: $names to (a: "Me", "", "", "Samuel", "", "Astor", "", "Clara", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page34")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page34 [en Scene7.1] {"position":"5125,525","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "The passage was long, lined with circus props and costumes.",
+  "After about five minutes, we finally reached the other side.",
+  "We’re here!",
+  "Astor tried the door—locked. Just like Mark said, it needed an employee ID.",
+  "What now?!",
+  "Astor rammed the door again and again, but it didn’t budge.",
+  "The noise echoed.",
+  "Then a cold voice behind us:",
+  "What are you doing here?",
+  "We turned—and saw the security guard’s twisted smile.",
+  "He stared at us like prey.",
+  "At this moment, we will:"
+))
+
+(set: $names to (a: "", "", "Samuel", "", "Samuel", "", "", "", "Security", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Fight for the passage->page40]]
+(button:)[[Ask for his help->Bad Ending 10]]
+]
+
+
+:: page34.A [en Scene7.2] {"position":"4925,1175","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "The office turned up nothing.",
+  "Not a single ID card.",
+  "So we pushed our luck and headed somewhere else—anywhere else.",
+  "The employee break room was surprisingly clean compared to the rest of the park.",
+  "Tables wiped down, chairs neatly arranged, a faint smell of old coffee still lingering in the air.",
+  "The vending machine hummed quietly in the corner, almost too normal for a place like this.",
+  "You decided to search:"
+))
+
+(set: $names to (a: "", "", "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[The Counter and Cabinets Near the Coffee Machine->page34.D]]
+(button:)[[The Sofa Area->page34.D]]
+]
+
+
+:: page34.B [en Scene7.3] {"position":"5125,800","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "No matter how hard we searched, we couldn’t find any employee ID cards.",
+  "Just as we were about to head somewhere else, we suddenly spotted a figure in red clothes, holding a flashlight through the hallway.",
+  "It was a security guard.",
+  "We remembered that the rules said we could ask the guard for help… but then we also remembered what Mark had warned us about — that there were traps hidden within the rules.",
+  "At this moment, we will:"
+))
+
+(set: $names to (a: "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Immediately run in the opposite direction->Bad Ending 8]]
+(button:)[[Hide in the prop storage room immediately->page35]]
+]
+
+
+:: page34.C [en Inventory Scene7] {"position":"5125,1050","size":"100,100"}
+{
+<div class="letter">
+(link-reveal: "''The Story of the Mabel''")[<br>
+A girl who had just finished her college entrance exams wanted to celebrate the end of years of exhausting study. <br>
+She dyed her hair a bright color, got a small tattoo, and went on a family trip. <br>
+But after posting her photos online, she became the target of vicious attacks. <br>
+<br>
+People called her |letter>[shameless.] <br>
+Said she was |letter>[showing off her body.] <br>
+Said she was |letter>[trying to attract men.] <br>
+Said a student should be |letter>[modest, obedient, conservative.] <br>
+<br>
+|letter>[The harassment spread like wildfire.] <br>
+<br>
+In the end, unable to endure the relentless cruelty of the internet, the girl jumped into the river and ended her life.
+] </div>
+
+(set: $sanity to it + 5)
+(set: $dialogs to (a: 
+  "The amusement park was located near where it happened.",
+  "These words were left by Mark under the news article.",
+  "After reading it, all of us went silent—our minds completely blank.",
+  "Especially me.",
+  "Five years ago, I watched the entire situation explode online in real time.",
+  "As a content creator, I wanted to speak up for her.",
+  "But I was afraid.",
+  "Afraid of being attacked.",
+  "Afraid of losing followers.",
+  "Afraid of trouble.",
+  "She had such a bright future ahead of her…",
+  "And I did nothing.",
+  "Astor stared at the screen, stunned.",
+  "So… that horrifying, bloodthirsty monster… was once a victim pushed to the edge by people?",
+  "Is everything here… driven by the hatred and revenge of these broken souls?"
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", "", "", "", "", "", "Astor", "Astor"))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page33.A]]
+]
+
+
+:: page34.D [en Scene7.2] {"position":"5125,1175","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "There’s nothing here!"
+))
+
+(set: $names to (a: ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page33.A]]
+]
+
+
+:: page35 [en Scene7.3] {"position":"5350,1050","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We slammed the door shut behind us and locked it tight.",
+  "Only then did we finally breathe again.",
+  "The prop storage room was a chaotic maze—piles of oversized costumes, broken stage props, scattered tools, and crates stacked so high they nearly touched the ceiling.",
+  "Shadows twisted strangely between the clutter, making the room feel even more suffocating.",
+  "We decided to search:"
+))
+
+(set: $names to (a: "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Storage Lockers->page36.B]]
+(button:)[[Cluttered floor->page36.A]]
+]
+
+
+:: page36.A [en Scene7.3] {"position":"5525,1200","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We kept digging through the piles of props scattered across the floor.",
+  "After a few minutes of searching, my hand brushed against something thin and plastic—a lanyard.",
+  "I pushed aside a giant mascot costume, and there it was:",
+  "An old, worn employee ID card, half-buried under the fabric.",
+  "Next to it lay a small pack of chewing gum, probably dropped by someone while moving props around.",
+  "I wasn’t sure if the card still worked…",
+  "but it was the best chance we had.",
+  "We slowly cracked open the storage-room door.",
+  "The hallway was dim, and the security guard was still patrolling—his steps heavy, deliberate, too close for comfort.",
+  "We decided to:"
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Seek help from him->Bad Ending 9]]
+(button:)[[Follow him quietly->page37]]
+]
+
+
+:: page36.B [en Scene7.3] {"position":"5525,850","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "There’s nothing here!"
+))
+
+(set: $names to (a: ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Go back->page35]]
+]
+
+
+:: page37 [en Scene7.1] {"position":"5725,1075","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We moved toward the guard, but just as Samuel took a step, I grabbed his arm.",
+  "Wait.",
+  "I remember Mark saying some of the rules might be traps.",
+  "Clara nodded, eyes fixed on the guard.",
+  "He’s wearing red. He might be the same kind of creature as the staff.",
+  "So instead of approaching him, we kept our distance and followed quietly.",
+  "The guard walked back into the circus grounds, circled the main area, then slipped backstage.",
+  "Just as we suspected, he headed straight toward the entrance of the employee passage.",
+  "He’s probably done with his patrol now.",
+  "Then what do we do…",
+  "Once he entered the passage, our chance to escape would vanish.",
+  "We decided to:"
+))
+
+(set: $names to (a: "", "Me", "Me", "", "Clara", "", "", "", "Astor", "Samuel", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Continue following him quietly->page38.A]]
+(button:)[[Distract him->page38.B]]
+]
+
+
+:: page38.A [en Scene7.1] {"position":"5900,1025","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We were still trying to come up with a plan when the security guard slipped into the passage and shut the door behind him.",
+  "We hurried after him, swiped the ID card, and eased the door open as quietly as we could.",
+  "The guard was already far ahead, his footsteps echoing faintly down the long corridor.",
+  "We walked for what felt like forever.",
+  "Then—",
+  "Astor’s employee card slipped from his hand.",
+  "I stepped on it by accident, smearing a streak of blood across its surface.",
+  "There was no time to think about it.",
+  "I grabbed the card, and we kept running toward the exit."
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page39.A")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page38.B [en Scene7.1] {"position":"5900,1175","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We shouted at the guard on purpose, drawing his attention toward us.",
+  "The moment he turned to look, we bolted.",
+  "While he rushed toward the noise, we slipped through the passage door he’d left open and slammed it behind us.",
+  "His footsteps echoed after us almost immediately—he’d realized we were inside.",
+  "We sprinted down the long corridor with everything we had.",
+  "Then Astor’s employee card slipped from his hand.",
+  "I stepped on it by accident, smearing fresh blood across the surface.",
+  "No time to fix it.",
+  "I grabbed the card and kept running toward the exit."
+))
+
+(set: $names to (a: "", "", "", "", "", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page39.B")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+
+(display: "DialogBox")
+(display: "Styles")
+}
+
+
+:: page39.A [en Scene7.1] {"position":"6050,1025","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We walked for what felt like forever—long enough that our footsteps echoed louder than our breathing.",
+  "But in the end, the security guard still heard us.",
+  "He stood in the doorway with that same twisted smile.",
+  "You really think ...you can leave?",
+  "We rushed past him toward the scanner.",
+  "Clara slammed the employee card against it, but the blood-smeared barcode wouldn’t read.",
+  "It won’t scan!",
+  "Samuel tried tearing off the damaged cover, but before he could finish, the guard was already behind us—silent, looming.",
+  "That’s when we noticed the ID card hanging from his neck.",
+  "We looked at each other, ready for our final fight."
+))
+
+(set: $names to (a: "", "", "", "Security", "", "", "Clara", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page40")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/646/646483_12295155-lq.mp3
+" autoplay>
+}
+
+
+:: page39.B [en Scene7.1] {"position":"6050,1175","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We ran until the hallway narrowed, the guard’s footsteps growing louder behind us.",
+  "He stood in the doorway with that same twisted smile.",
+  "You really think ...you can leave?",
+  "We rushed past him toward the scanner.",
+  "Clara slammed the employee card against it, but the blood-smeared barcode wouldn’t read.",
+  "It won’t scan!",
+  "Samuel tried tearing off the damaged cover, but before he could finish, the guard was already behind us—silent, looming.",
+  "That’s when we noticed the ID card hanging from his neck.",
+  "We looked at each other, ready for our final fight."
+))
+
+(set: $names to (a: "", "", "Security", "", "", "Clara", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page40")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/110/110216_682033-lq.mp3
+" autoplay>
+}
+
+
+:: page40 [en Scene7.1] {"position":"6225,1025","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Clara’s eyes widened.",
+  "Look! He has his staff ID card!",
+  "The moment she said it, I lunged forward, reaching for the card hanging from the guard’s neck.",
+  "But he moved with inhuman speed, tilting his head just enough to dodge my hand.",
+  "Oh?",
+  "You dare try to take my employee ID card?",
+  "The air froze.",
+  "None of us moved.",
+  "His grin widened.",
+  "You really think you can escape?",
+  "He stepped toward us, claws ready.",
+  "We had only one chance left—one desperate move.",
+  "We decided:"
+))
+
+(set: $names to (a: "", "Clara", "", "", "Security", "Security", "", "", "", "Security", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/676/676998_12064174-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Let Astor to put a black mask on his head->page41.A]]
+(button:)[[Let Samuel distract him->page41.B]]
+]
+
+
+:: page41.A [en Scene7.1] {"position":"6400,1150","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Clara found a black hood used by one of the circus performers, and just as the security guard raised his sharp claws, Astor quickly pulled the hood over his head, blocking his vision completely.",
+  "Unable to see or locate us, the guard lowered his deadly hands in confusion.",
+  "Taking advantage of the moment, Samuel delivered a powerful kick that sent the guard flying backward.",
+  "He crashed heavily onto the ground.",
+  "Go!",
+  "I immediately grabbed the employee ID card hanging around the guard’s neck and pulled everyone along as we fled for our lives."
+))
+
+(set: $names to (a: "", "", "", "", "Samuel", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page42.A")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/676/676998_12064174-lq.mp3
+" autoplay>
+}
+
+
+:: page41.B [en Scene7.4] {"position":"6400,925","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "Samuel immediately ran behind the guard and slammed his fists into his back.",
+  "You bastards!",
+  "Annoyed by the attack, the guard turned around to face Samuel.",
+  "Taking advantage of the distraction, I ripped the employee ID card off the strap around his neck and sprinted toward the end of the passage to unlock the door.",
+  "But just as we were about to escape, the guard suddenly grabbed Samuel and drove his sharp claws straight into his chest.",
+  "No!",
+  "Samuel slowly collapsed to the ground.",
+  "The lively spark that once filled his eyes faded away, replaced by an empty, hollow stare.",
+  "Seeing me fall to my knees in shock — and noticing the guard charging toward us again — Astor immediately grabbed my arm, slammed the employee ID card against the scanner, and dragged me through the exit.",
+  "Together, we escaped from that world that felt no different from hell."
+))
+
+(set: $names to (a: "", "Samuel", "", "", "", "Me", "", "", "", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "page42.A")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/676/676998_12064174-lq.mp3
+" autoplay>
+}
+
+
+:: page42.A [en Scene7.5] {"position":"6550,1025","size":"100,100"}
+{
+(set: $dialogs to (a: 
+  "We burst out of the passage, running toward the faint light ahead.",
+  "Astor—that must be the exit Mark mentioned!",
+  "But the moment we reached it, we froze.",
+  "On the ground lay an insignia of the SCP Foundation, stained with a long-dried pool of blood.",
+  "Mark… he…",
+  "None of us finished the sentence.",
+  "Ahead of us stood three doors, each dimly lit, each leading somewhere unknown.",
+  "First door: A steady red glow leaked from the crack beneath the door. The light didn’t flicker. Behind it, synchronized footsteps marched in perfect rhythm. A dark blue ribbon was tied neatly around the handle.",
+  "Second door: A metal gate with bars just wide enough for someone to squeeze through sideways. A rusted padlock hung from it—unlocked, almost inviting.",
+  "Third door: A faint white light seeped from the bottom. The door itself was plain, but as we leaned closer… familiar voices whispered from the other side.",
+  "This is probably the illusion’s final test…",
+  "Behind us, the guard’s growls grew louder.",
+  "He was getting closer.",
+  "No time to think!",
+  "I clenched my teeth and made my choice:"
+))
+
+(set: $names to (a: "", "Me", "", "", "Clara", "", "", "", "", "", "Me", "", "", "Clara", ""))
+(set: $step to 1)
+(set: $msgName to $names's ($step))
+(set: $nextPassage to "none")
+
+(display: "DialogBox")
+(display: "Styles")
+
+<audio src="https://cdn.freesound.org/previews/731/731716_15403889-lq.mp3
+" autoplay>
+}
+
+|choices)[
+(button:)[[Door 1->Bad Ending 11]]
+(button:)[[Door 2->Bad Ending 11]]
+(button:)[[Door 3]]
+]
+
+
+:: StoryScript [script]
+window.updateSanityBar = function(value) {
+  var numericValue = parseInt(String(value).replace(/[^0-9]/g, '')) || 0;
+  var bar = document.getElementById('sanity-fill');
+  var container = document.getElementById('sanity-container'); // Get container
+  
+  if (bar) {
+    bar.style.width = numericValue + '%';
+    
+    if (numericValue <= 30) {
+      bar.style.backgroundColor = '#d4183d';
+      if (container) container.classList.add('is-danger');
+    } else {
+      bar.style.backgroundColor = '#ffffff';
+      if (container) container.classList.remove('is-danger');
+    }
+  }
+};
+
+var audio = document.createElement('audio');
+audio.volume = 0.1;
+audio.src = 'https://cdn.freesound.org/previews/511/511496_9405724-lq.mp3';
+audio.play();
+audio.loop = true;
+
+:: StoryStylesheet [stylesheet]
+/* ===========================
+   FONT IMPORTS
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/walktrought');
+
+/* ===========================
+   GLOBAL STYLING
+   =========================== */
+body, tw-story {
+  font-family: "Alike Angular", serif;
+  font-weight: 400;
+  cursor: default;
+  user-select: none;
+}
+
+/* Hide Twine icons and startup includes */
+tw-icon, tw-include[type="startup"] {
+  display: none;
+}
+
+/* Remove accessibility outline */
+.enchantment-clickblock > :not(tw-enchantment)::after {
+  box-shadow: none;
+}
+
+/* Main story content padding */
+tw-story {
+  padding-left: 37%;
+}
+
+/* ===========================
+   SIDEBAR
+   =========================== */
+tw-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  padding: 2em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.7em;
+  color: #888;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #000;
+}
+
+/* Status text */
+span.healthy {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+span.danger {
+  color: #d4183d;
+  font-family: "Walktrought", serif;
+}
+
+/* Sanity meter */
+.sanity-bar-bg {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  margin: 0 0 1em 0;
+}
+
+.sanity-bar-fill {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  transition: width 0.4s ease;
+}
+
+/* Sidebar divider */
+tw-sidebar hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #444;
+  margin: 0.8em 0;
+  opacity: 0.5;
+}
+
+/* Push last child to bottom */
+tw-sidebar > :last-child {
+  margin-top: auto;
+  padding-top: 2em;
+}
+
+/* ===========================
+   BACKGROUND IMAGES
+   =========================== */
+tw-story[tags~="Scene1"]   { background-image: url("https://i.imgur.com/B5LeAg1.png"); }
+tw-story[tags~="Scene1.2"] { background-image: url("https://i.imgur.com/z8ugpSu.png"); }
+tw-story[tags~="Scene1.3"] { background-image: url("https://i.imgur.com/8LGJxNw.png"); }
+tw-story[tags~="Scene1.4"] { background-image: url("https://i.imgur.com/SAnw4OA.png"); }
+tw-story[tags~="Scene1.5"] { background-image: url("https://i.imgur.com/6ZyFNwf.png"); }
+tw-story[tags~="Scene1.6"] { background-image: url("https://i.imgur.com/Rkm7CuM.png"); }
+tw-story[tags~="Scene1.7"] { background-image: url("https://i.imgur.com/YaiLNGb.png"); }
+tw-story[tags~="Scene2"]   { background-image: url("https://i.imgur.com/rfn6rnr.png"); }
+tw-story[tags~="Scene2.1"] { background-image: url("https://i.imgur.com/vuv3nqm.png"); }
+tw-story[tags~="Scene2.2"] { background-image: url("https://i.imgur.com/hank6Lw.png"); }
+tw-story[tags~="Scene2.3"],
+tw-story[tags~="Scene2.4"] { background-image: url("https://i.imgur.com/2bGNZnF.png"); }
+tw-story[tags~="Scene2.5"] {background-image: url("https://i.imgur.com/GPDQG55.png"); }
+tw-story[tags~="Scene3"] {background-image: url("https://i.imgur.com/1lf34qj.png"); }
+tw-story[tags~="Scene3.1"] {background-image: url("https://i.imgur.com/jtmOULd.png"); }
+tw-story[tags~="Scene3.2"] {background-image: url("https://i.imgur.com/GPDQG55.png"); }
+tw-story[tags~="Scene3.3"] {background-image: url("https://i.imgur.com/EVYhAGt.png"); }
+tw-story[tags~="Scene3.4"],
+tw-story[tags~="Scene3.6"] {background-image: url("https://i.imgur.com/C1ZpA0X.png"); }
+tw-story[tags~="Scene3.5"] {background-image: url("https://i.imgur.com/EVYhAGt.png"); }
+tw-story[tags~="Scene3.6"] {background-image: url("https://i.imgur.com/EVYhAGt.png"); }
+tw-story[tags~="Scene4"] {background-image: url("https://i.imgur.com/R0BTHiS.png"); }
+tw-story[tags~="Scene4.1"] {background-image: url("https://i.imgur.com/k1ZzasP.png"); }
+tw-story[tags~="Scene4.2"] {background-image: url("https://i.imgur.com/h7iNnHP.png"); }
+tw-story[tags~="Scene4.3"] {background-image: url("https://i.imgur.com/o4zsJnt.png"); }
+tw-story[tags~="Scene5"] {background-image: url("https://i.imgur.com/gru4I2J.png"); }
+tw-story[tags~="Scene5.1"] {background-image: url("https://i.imgur.com/v9u2HSE.png"); }
+tw-story[tags~="Scene5.2"] {background-image: url("https://i.imgur.com/4kGSkJy.png"); }
+tw-story[tags~="Scene6"] {background-image: url("https://i.imgur.com/Wi1wrHx.png"); }
+tw-story[tags~="Scene6.1"] {background-image: url("https://i.imgur.com/Pam1zGQ.png"); }
+tw-story[tags~="Scene6.2"] {background-image: url("https://i.imgur.com/VeGQa9W.png"); }
+tw-story[tags~="Scene6.3"] {background-image: url("https://i.imgur.com/KgzsfYu.png"); }
+tw-story[tags~="Scene7"] {background-image: url("https://i.imgur.com/oSThIZd.png"); }
+tw-story[tags~="Scene7.1"] {background-image: url("https://i.imgur.com/cJGRuyK.png"); }
+tw-story[tags~="Scene7.2"] {background-image: url("https://i.imgur.com/rbWHVAM.png"); }
+tw-story[tags~="Scene7.3"] {background-image: url("https://i.imgur.com/KPSIRbt.png"); }
+tw-story[tags~="Scene7.4"] {background-image: url("https://i.imgur.com/5PkPXrE.png"); }
+tw-story[tags~="Scene7.5"] {background-image: url("https://i.imgur.com/itPUCDJ.png"); }
+
+tw-story[tags~="Scene1"],tw-story[tags~="Scene1.2"],
+tw-story[tags~="Scene1.3"],tw-story[tags~="Scene1.4"],
+tw-story[tags~="Scene1.5"],tw-story[tags~="Scene1.6"],
+tw-story[tags~="Scene1.7"],tw-story[tags~="Scene2"],
+tw-story[tags~="Scene2.1"],tw-story[tags~="Scene2.2"],
+tw-story[tags~="Scene2.3"],tw-story[tags~="Scene2.4"],
+tw-story[tags~="Scene2.5"],tw-story[tags~="Scene3"],
+tw-story[tags~="Scene3.1"],tw-story[tags~="Scene3.2"],
+tw-story[tags~="Scene3.3"],tw-story[tags~="Scene3.4"],
+tw-story[tags~="Scene3.5"],tw-story[tags~="Scene3.6"],
+tw-story[tags~="Scene4"],tw-story[tags~="Scene4.1"],
+tw-story[tags~="Scene4.2"],tw-story[tags~="Scene4.3"],
+tw-story[tags~="Scene5"],tw-story[tags~="Scene5.1"],
+tw-story[tags~="Scene5.2"],tw-story[tags~="Scene6"],
+tw-story[tags~="Scene6.1"],tw-story[tags~="Scene6.2"],
+tw-story[tags~="Scene6.3"],tw-story[tags~="Scene7"],
+tw-story[tags~="Scene7.1"],tw-story[tags~="Scene7.2"],
+tw-story[tags~="Scene7.3"],tw-story[tags~="Scene7.4"],
+tw-story[tags~="Scene7.5"]
+{
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  background-size: 80% 100%;
+}
+
+/* ===========================
+   LETTER
+   =========================== */
+.letter {
+  display: block;
+  margin: 20px 0;
+  padding: 0 2em;
+  max-width: 90%;
+  max-height: 40vh;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: rgba(0, 0, 0, 0.7); 
+  border-left: 4px solid #8B0000; 
+  font-style: italic;
+  line-height: 1.8;
+  font-size: 0.7em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* ===========================
+   DIALOG BOX
+   =========================== */
+.msg-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.msg-name {
+  color: #fff;
+  text-shadow: black 1px 0 5px;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 1.5em;
+}
+
+.msg-content {
+  width: 100%;
+  min-height: 25vh;
+  background: linear-gradient(to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 0.5em 1.5em;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 1em;
+  white-space: normal;
+  word-wrap: break-word;
+  pointer-events: auto;
+}
+
+/* Next character blinking cursor */
+.next-char {
+  display: inline-block !important;
+  color: red !important;
+  font-size: 1em !important;
+  font-family: "Alike Angular", serif !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  margin-left: 0.5em;
+  vertical-align: baseline;
+  text-shadow: 0 0 5px black;
+  animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* ===========================
+   FIX: REMOVE ENCHANT VISUALS
+   =========================== */
+
+/* 1. 移除點擊區域的藍色外框與陰影 */
+.enchantment-clickblock, 
+tw-enchantment,
+tw-hook[name="dialoguearea"] {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* 2. 確保滑鼠指針在對話框上維持預設（除非你想讓它變手型） */
+tw-hook[name="dialoguearea"] {
+  cursor: default !important;
+  /* 防止 Harlowe 改變其佈局屬性 */
+  display: block !important; 
+}
+
+/* 3. 如果你的文字出現了底線或變色，強制重置 */
+tw-hook[name="dialoguearea"] :not(a) {
+  text-decoration: none !important;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+.enchantment-button {
+  background: rgba(0, 0, 0, 0.85) !important;
+  display: flex !important;
+  width: 30vw !important;
+  min-height: 6vh;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid red;
+  box-shadow: 10px 10px 10px black;
+}
+
+.enchantment-button:not(.link) tw-link {
+  border: none;
+}
+
+.enchantment-button:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* ===========================
+   FORM CONTROLS
+   =========================== */
+tw-story input[type=text] {
+  padding: 10px 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+  caret-color: #d4183d;
+}
+
+body > tw-enchantment > tw-story > tw-passage > tw-collapsed > tw-hook > tw-expression:nth-child(3) {
+  border: 0px;
+}
+
+input[type="text"]::selection,
+input[type="password"]::selection,
+textarea::selection {
+  background: #d4183d;
+  color: #fff;
+}
+
+/* ===========================
+   POPUP OVERLAY
+   =========================== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-content img {
+  display: block;
+  width: auto;
+  height: 60vh;
+  max-width: 90vw;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border: 1px solid red;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  white-space: nowrap;
+}
